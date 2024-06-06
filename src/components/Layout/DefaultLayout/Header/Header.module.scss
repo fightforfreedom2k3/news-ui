@@ -1,0 +1,34 @@
+.wrapper {
+    height: 65px;
+    position: sticky;
+    background-color: white;
+    border-bottom: 1px solid rgb(230, 232, 234);
+    z-index: 4000;
+
+    .header-item {
+        position: relative;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 1rem;
+
+        .nav-bar {
+            flex: 1 1 0%;
+            display: flex;
+            -webkit-box-pack: start;
+            justify-content: start;
+
+            .nav-btn {
+                width: 32px;
+                height: 32px;
+                cursor: pointer;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                background-color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
