@@ -2,12 +2,12 @@ import Header from './Header';
 
 function DefaultLayout({ children }) {
     return (
-        <div>
+        <Stack>
             <Header />
-            <div className="container">
+            <Stack>
                 <div className="main">{children}</div>
-            </div>
-        </div>
+            </Stack>
+        </Stack>
     );
 }
 
