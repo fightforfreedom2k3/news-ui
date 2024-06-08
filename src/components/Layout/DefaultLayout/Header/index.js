@@ -5,27 +5,19 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import React, { useState } from 'react';
 import AccountMenu from '../../../AccountMenu/AccountMenu';
+import NavButton from '../../../NavButton/NavButton';
 
 const cx = classNames.bind(styles);
 
 function Header() {
-    const [anchorEl, setAnchorEl] = useState(null);
-    const open = Boolean(anchorEl);
-
-    const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
     return (
         <header className={cx('wrapper')}>
             <Stack p={1.2} direction={'row'} justifyContent={'space-between'}>
                 {/* Thanh Navigation */}
                 <Stack direction={'row'} spacing={1}>
                     <IconButton>
-                        <MenuIcon fontSize="large"></MenuIcon>
+                        {/* <MenuIcon fontSize="large"></MenuIcon> */}
+                        <NavButton />
                     </IconButton>
 
                     <IconButton>

@@ -73,9 +73,7 @@ export default function AccountMenu() {
                 <MenuItem onClick={handleClose}>
                     <PersonIcon /> Profile
                 </MenuItem>
-                <MenuItem onClick={handleClose}>
-                    <PersonIcon /> My account
-                </MenuItem>
+
                 <Divider />
 
                 <MenuItem onClick={handleClose}>
