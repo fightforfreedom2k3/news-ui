@@ -6,41 +6,46 @@ import SearchIcon from '@mui/icons-material/Search';
 import React, { useState } from 'react';
 import AccountMenu from '../../../AccountMenu/AccountMenu';
 import NavButton from '../../../NavButton/NavButton';
+import NavBar from '../../../NavBar/NavBar';
 
 const cx = classNames.bind(styles);
 
 function Header() {
     return (
-        <header className={cx('wrapper')}>
-            <Stack p={1.2} direction={'row'} justifyContent={'space-between'}>
-                {/* Thanh Navigation */}
-                <Stack direction={'row'} spacing={1}>
-                    <IconButton>
-                        {/* <MenuIcon fontSize="large"></MenuIcon> */}
-                        <NavButton />
-                    </IconButton>
-
-                    <IconButton>
-                        <SearchIcon fontSize="large"></SearchIcon>
-                    </IconButton>
-                </Stack>
-
-                {/* Logo */}
+        <>
+            <header className={cx('wrapper')}>
                 <Stack>
-                    <Box
-                        component={'img'}
-                        src={'https://i.pinimg.com/736x/26/91/f2/2691f2fa1a0f078f5f274edf7fea6763.jpg'}
-                        width={170}
-                        height={52}
-                    ></Box>
-                </Stack>
+                    <Stack p={1.2} direction={'row'} justifyContent={'space-between'}>
+                        {/* Thanh Navigation */}
+                        <Stack direction={'row'} spacing={1}>
+                            {/* <MenuIcon fontSize="large"></MenuIcon> */}
+                            <NavButton />
 
-                {/* Account */}
-                <Stack>
-                    <AccountMenu />
+                            {/* <IconButton>
+                                <SearchIcon fontSize="large"></SearchIcon>
+                            </IconButton> */}
+                        </Stack>
+
+                        {/* Logo */}
+                        <Stack>
+                            <Box
+                                component={'img'}
+                                src={'https://i.pinimg.com/736x/26/91/f2/2691f2fa1a0f078f5f274edf7fea6763.jpg'}
+                                width={170}
+                                height={52}
+                            ></Box>
+                        </Stack>
+
+                        {/* Account */}
+                        <Stack>
+                            <AccountMenu />
+                        </Stack>
+                    </Stack>
+
+                    <NavBar />
                 </Stack>
-            </Stack>
-        </header>
+            </header>
+        </>
     );
 }
 
