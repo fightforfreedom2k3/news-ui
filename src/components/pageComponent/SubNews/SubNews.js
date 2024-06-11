@@ -1,17 +1,17 @@
 import { Stack, Box, Typography, Card, CardContent, CardActionArea, CardMedia } from '@mui/material';
 
-export default function MainNews() {
-    return (
+
+export default function SubNews(){
+    return(
         <Card component={'div'} onClick={()=>{}} sx={{cursor: 'pointer'}}>
-            {/* Image */}
             <CardActionArea>
                 <Stack>
                     <CardMedia
                         component={'img'}
                         src={
-                            'https://ichef.bbci.co.uk/news/1536/cpsprodpb/f6c7/live/fb4ccc50-273c-11ef-a0aa-318f04db7c53.jpg.webp'
+                            'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp'
                         }
-                        height={'291px'}
+                        height={'153px'}
                         alt={'green iguana'}
                     ></CardMedia>
                 </Stack>
@@ -30,18 +30,8 @@ export default function MainNews() {
                     <Typography fontWeight={-1000} fontSize={'12px'} letterSpacing={'-0.12px'}>
                         24 hrs ago | Europe 
                     </Typography>
-                          
-                    {/* Related */}
-                    <Typography sx={{':hover': {textDecoration: 'underline'}}} fontWeight={1000} fontSize={'16px'} lineHeight={'20px'} letterSpacing={'-0.32px'} textTransform={'none'}>
-                    Europe's night of election drama capped by Macron bombshell
-                    </Typography>
-                    
-                    <Typography sx={{':hover': {textDecoration: 'underline'}}} fontWeight={1000} fontSize={'16px'} lineHeight={'20px'} letterSpacing={'-0.32px'} textTransform={'none'}>
-                    Far right makes gains in EU election but it could struggle to unite
-                    </Typography>
-                    {/* ---------------- */}
                 </Stack>
-            </CardContent>
+            </CardContent>              
         </Card>
-    );
+    )
 }

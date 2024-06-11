@@ -42,9 +42,12 @@ function Header() {
                         </Stack>
                     </Stack>
 
-                    <NavBar />
+                    
                 </Stack>
             </header>
+            {/* <Stack marginTop={'72px'}>
+                <NavBar/>
+            </Stack> */}
         </>
     );
 }

@@ -36,12 +36,13 @@ export default function NavBar() {
 
     return (
         <Stack
-            zIndex={1}
-            // borderBottom={'1px solid #e2e2e2'}
+            // zIndex={-1}
+            backgroundColor={'white'}
             pb={0.5}
             direction={'row'}
             justifyContent={'center'}
             spacing={3}
+            borderBottom={'1px solid #e2e2e2'}
         >
             {arrayObject.map((object) => {
                 return (
