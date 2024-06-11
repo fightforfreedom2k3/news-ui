@@ -1,6 +1,6 @@
 import SportLayout from '../components/Layout/SportLayout';
 
-import Home from '../Pages/HomePage';
+import HomePage from '../Pages/HomePage/HomePage';
 import News from '../Pages/News/News';
 import Sports from '../Pages/Sports/Sports';
 import Login from '../Pages/Auth/Login';
@@ -11,7 +11,7 @@ import Culture from '../Pages/Culture/Culture';
 
 //Public routes
 const publicRouter = [
-    { path: '/', component: Home },
+    { path: '/', component: HomePage },
     { path: '/news', component: News },
     { path: '/sports', component: Sports, layout: SportLayout },
     { path: '/login', component: Login, layout: null },

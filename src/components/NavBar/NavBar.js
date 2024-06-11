@@ -37,7 +37,7 @@ export default function NavBar() {
     return (
         <Stack
             zIndex={1}
-            borderBottom={'1px solid #e2e2e2'}
+            // borderBottom={'1px solid #e2e2e2'}
             pb={0.5}
             direction={'row'}
             justifyContent={'center'}
