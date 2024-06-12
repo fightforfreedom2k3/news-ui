@@ -1,17 +1,20 @@
-import { Stack, Box, Typography, Card, CardContent, CardActionArea, CardMedia, Divider } from '@mui/material';
+import { Card, CardActionArea, CardContent, CardMedia, Stack } from '@mui/material';
 
-export default function TextNews({ data }) {
+export default function HighlightNews({ data }) {
     return (
-        <Stack component={'div'} onClick={() => {}} sx={{ cursor: 'pointer' }} gap={'8px'}>
-            <CardContent className="text-wrapper">
+        <Card>
+            <CardActionArea>
+                <CardMedia component={'img'} src={data?.img} height={'306px'} alt={'green iguana'}></CardMedia>
+            </CardActionArea>
+            <CardContent sx={{ p: 0, pt: 2 }}>
                 <Stack spacing={2}>
                     {/* Title */}
                     <Typography
                         sx={{ ':hover': { textDecoration: 'underline' } }}
                         fontWeight={1000}
-                        fontSize={'18px'}
-                        lineHeight={'22px'}
-                        letterSpacing={'-0.36px'}
+                        fontSize={'28px'}
+                        lineHeight={'32px'}
+                        letterSpacing={'-0.56px'}
                         textTransform={'none'}
                         textOverflow={'anywhere'}
                     >
@@ -27,7 +30,6 @@ export default function TextNews({ data }) {
                     </Typography>
                 </Stack>
             </CardContent>
-            <Divider />
-        </Stack>
+        </Card>
     );
 }
