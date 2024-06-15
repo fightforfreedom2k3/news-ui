@@ -5,6 +5,7 @@ import TextNews from '../../components/pageComponent/TextNews/TextNews';
 import HighlightNews from '../../components/pageComponent/HighlightNews/HighlightNews';
 import MoreNews from '../../components/pageComponent/MoreNews/MoreNews';
 import MoreNews1 from '../../components/pageComponent/MoreNews1/MoreNews1';
+import EmblaCarousel from '../../components/EmblaCarousel/EmblaCarousel';
 function HomePage() {
     const data3 = [
         {
@@ -32,6 +33,63 @@ function HomePage() {
             note: '24 hrs ago | Europe',
         },
     ];
+    const dataVideo = [
+        {
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
+            title: 'Macron snap election leaves rivals stunned after EU vote',
+            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
+            note: '24 hrs ago | Europe',
+        },
+        {
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
+            title: 'Macron snap election leaves rivals stunned after EU vote',
+            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
+            note: '24 hrs ago | Europe',
+        },
+        {
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
+            title: 'Macron snap election leaves rivals stunned after EU vote',
+            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
+            note: '24 hrs ago | Europe',
+        },
+        {
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
+            title: 'Macron snap election leaves rivals stunned after EU vote',
+            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
+            note: '24 hrs ago | Europe',
+        },
+        {
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
+            title: 'Macron snap election leaves rivals stunned after EU vote',
+            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
+            note: '24 hrs ago | Europe',
+        },
+        {
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
+            title: 'Macron snap election leaves rivals stunned after EU vote',
+            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
+            note: '24 hrs ago | Europe',
+        },
+        {
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
+            title: 'Macron snap election leaves rivals stunned after EU vote',
+            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
+            note: '24 hrs ago | Europe',
+        },
+        {
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
+            title: 'Macron snap election leaves rivals stunned after EU vote',
+            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
+            note: '24 hrs ago | Europe',
+        },
+        {
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
+            title: 'Macron snap election leaves rivals stunned after EU vote',
+            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
+            note: '24 hrs ago | Europe',
+        },
+    ];
+
     const data2 = [
         {
             img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
@@ -46,6 +104,7 @@ function HomePage() {
             note: '24 hrs ago | Europe',
         },
     ];
+
     const data4 = [
         {
             img: 'https://ichef.bbci.co.uk/images/ic/800xn/p0j3kk9s.jpg.webp',
@@ -97,7 +156,7 @@ function HomePage() {
                 </Stack>
 
                 {/* MORE */}
-                <Stack width={1200} borderBottom={'1px solid black'}>
+                <Stack width={1200}>
                     <Typography marginTop={'20px'} fontSize={'18px'} fontWeight={1000} left={0}>
                         More News
                     </Typography>
@@ -125,6 +184,27 @@ function HomePage() {
                             <TextNews data={data3[2]} />
                         </Grid>
                     </Grid>
+                </Stack>
+
+                <Stack position={'relative'} margin={'auto'} width={'100vw'}>
+                    <Stack
+                        position={'absolute'}
+                        width={'100vw'}
+                        borderBottom={'1px solid white'}
+                        sx={{ backgroundColor: 'black' }}
+                        left={0}
+                        alignItems={'center'}
+                        justifyContent={'center'}
+                        spacing={2}
+                        pt={3}
+                    >
+                        <Stack width={'1200px'} mt={2} borderTop={'2px solid white'}>
+                            <Typography marginTop={'20px'} fontSize={'18px'} fontWeight={1000} left={0} color={'white'}>
+                                Must Watch
+                            </Typography>
+                        </Stack>
+                        <EmblaCarousel data={dataVideo} />
+                    </Stack>
                 </Stack>
             </Stack>
         </>
