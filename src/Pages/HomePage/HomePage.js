@@ -6,6 +6,9 @@ import HighlightNews from '../../components/pageComponent/HighlightNews/Highligh
 import MoreNews from '../../components/pageComponent/MoreNews/MoreNews';
 import MoreNews1 from '../../components/pageComponent/MoreNews1/MoreNews1';
 import EmblaCarousel from '../../components/EmblaCarousel/EmblaCarousel';
+import { Grid3x3 } from '@mui/icons-material';
+import CategoryNews from '../../components/pageComponent/CategoryNews/CategoryNews';
+import OnlyNews from '../../components/pageComponent/OnlyNews/OnlyNews';
 function HomePage() {
     const data3 = [
         {
@@ -185,12 +188,12 @@ function HomePage() {
                         </Grid>
                     </Grid>
                 </Stack>
-
+                {/* Must Watch */}
                 <Stack position={'relative'} margin={'auto'} width={'100vw'}>
                     <Stack
                         position={'absolute'}
                         width={'100vw'}
-                        borderBottom={'1px solid white'}
+                        // borderBottom={'1px solid white'}
                         sx={{ backgroundColor: 'black' }}
                         left={0}
                         alignItems={'center'}
@@ -205,6 +208,28 @@ function HomePage() {
                         </Stack>
                         <EmblaCarousel data={dataVideo} />
                     </Stack>
+                </Stack>
+                {/* Outstanding */}
+                <Stack pt={'471px'} width={1200} pb={2}>
+                    <OnlyNews />
+                </Stack>
+
+                {/* News By Category */}
+                <Stack width={1200} borderTop={'2px solid #e2e2e2'}>
+                    <Grid className="Hoang" container gap={3}>
+                        <Grid sm={3 - 0.3}>
+                            <CategoryNews />
+                        </Grid>
+                        <Grid sm={3 - 0.3}>
+                            <CategoryNews />
+                        </Grid>
+                        <Grid sm={3 - 0.3}>
+                            <CategoryNews />
+                        </Grid>
+                        <Grid sm={3 - 0.3}>
+                            <CategoryNews />
+                        </Grid>
+                    </Grid>
                 </Stack>
             </Stack>
         </>

@@ -7,7 +7,7 @@ export default function VideoNews({ data }) {
             <Card
                 component={'div'}
                 onClick={() => {}}
-                sx={{ cursor: 'pointer', boxShadow: 'none', borderBottom: '1px solid white' }}
+                sx={{ cursor: 'pointer', boxShadow: 'none', borderBottom: '0px solid white' }}
             >
                 <CardActionArea>
                     <Stack position={'relative'}>
@@ -23,12 +23,12 @@ export default function VideoNews({ data }) {
                     </Stack>
                 </CardActionArea>
                 <CardContent className="text-wrapper" sx={{ p: '8px 0 !important', bgcolor: 'black' }}>
-                    <Stack spacing={2} color={'white'} bgcolor={'black'} borderBottom={'2px solid white'} pb={1.2}>
+                    <Stack spacing={2} color={'white'} bgcolor={'black'} borderBottom={'0px solid white'} pb={1.2}>
                         {/* Title */}
                         <Typography
                             sx={{ ':hover': { textDecoration: 'underline' } }}
                             fontWeight={1000}
-                            fontSize={'28px'}
+                            fontSize={'21px'}
                             lineHeight={'32px'}
                             letterSpacing={'-0.56px'}
                             textTransform={'none'}
