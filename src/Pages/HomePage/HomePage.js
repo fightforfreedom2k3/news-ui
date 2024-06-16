@@ -214,7 +214,7 @@ function HomePage() {
                     <OnlyNews />
                 </Stack>
 
-                {/* News By Category */}
+                {/* News By Category
                 <Stack width={1200} borderTop={'2px solid #e2e2e2'}>
                     <Grid className="Hoang" container gap={3}>
                         <Grid sm={3 - 0.3}>
@@ -230,7 +230,7 @@ function HomePage() {
                             <CategoryNews />
                         </Grid>
                     </Grid>
-                </Stack>
+                </Stack> */}
             </Stack>
         </>
     );
