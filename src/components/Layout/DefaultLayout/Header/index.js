@@ -20,10 +20,6 @@ function Header() {
                         <Stack direction={'row'} spacing={1}>
                             {/* <MenuIcon fontSize="large"></MenuIcon> */}
                             <NavButton />
-
-                            {/* <IconButton>
-                                <SearchIcon fontSize="large"></SearchIcon>
-                            </IconButton> */}
                         </Stack>
 
                         {/* Logo */}
@@ -41,8 +37,6 @@ function Header() {
                             <AccountMenu />
                         </Stack>
                     </Stack>
-
-                    
                 </Stack>
             </header>
             {/* <Stack marginTop={'72px'}>

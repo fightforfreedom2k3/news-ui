@@ -1,6 +1,7 @@
 import { Stack } from '@mui/material';
 import Header from './Header';
 import NavBar from '../../NavBar/NavBar';
+import Footer from './Footer/Footer';
 
 function DefaultLayout({ children }) {
     return (
@@ -12,6 +13,7 @@ function DefaultLayout({ children }) {
             <Stack marginTop={'120px'}>
                 <div className="main">{children}</div>
             </Stack>
+            <Footer />
         </Stack>
     );
 }

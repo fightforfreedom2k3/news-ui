@@ -153,7 +153,7 @@ function HomePage() {
 
     return (
         <>
-            <Stack alignItems={'center'} justifyContent={'center'}>
+            <Stack alignItems={'center'} justifyContent={'center'} borderBottom={'1px solid black'}>
                 {/*Wrapper1 */}
                 <Grid width={1200} container gap={4} borderBottom={'1px solid black'} pb={4}>
                     <Grid sm={3 - 0.4}>
@@ -250,8 +250,8 @@ function HomePage() {
                     <OnlyNews />
                 </Stack>
 
-                {/* News By Category
-                <Stack width={1200} borderTop={'2px solid #e2e2e2'}>
+                {/* News By Category */}
+                <Stack width={1200} borderTop={'2px solid #e2e2e2'} pb={5}>
                     <Grid className="Hoang" container gap={3}>
                         <Grid sm={3 - 0.3}>
                             <CategoryNews />
@@ -266,7 +266,7 @@ function HomePage() {
                             <CategoryNews />
                         </Grid>
                     </Grid>
-                </Stack> */}
+                </Stack>
             </Stack>
         </>
     );
