@@ -12,8 +12,8 @@ export default function MoreNews({ data }) {
                     <Typography
                         sx={{ ':hover': { textDecoration: 'underline' } }}
                         fontWeight={1000}
-                        fontSize={'18px'}
-                        lineHeight={'22px'}
+                        fontSize={'16px'}
+                        lineHeight={'20px'}
                         letterSpacing={'-0.36px'}
                         textTransform={'none'}
                         textOverflow={'anywhere'}

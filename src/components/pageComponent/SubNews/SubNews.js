@@ -24,8 +24,8 @@ export default function SubNews({ data }) {
                         <Typography
                             sx={{ ':hover': { textDecoration: 'underline' } }}
                             fontWeight={1000}
-                            fontSize={'28px'}
-                            lineHeight={'32px'}
+                            fontSize={'18px'}
+                            lineHeight={'22px'}
                             letterSpacing={'-0.56px'}
                             textTransform={'none'}
                             textOverflow={'anywhere'}

@@ -18,22 +18,21 @@ function HomePage() {
             note: '24 hrs ago | Europe',
         },
         {
-            title: 'Macron snap election leaves rivals stunned after EU vote',
+            title: 'How a Kenyan farmer became a champion of climate change denial',
             description:
-                "Greek police say initial tests found no injuries that could have caused the TV presenter's death.",
+                'A Kenyan farmer has caught the eye of climate change deniers worldwide. But what is driving him?',
+            note: '24 hrs ago | Africa',
+        },
+        {
+            title: 'Jordan Bardella could soon be French PM at 28. But for many he remains an enigma',
+            description: "Jordan Bardella's rise has been meteoric after being spotted by Marine Le Pen",
             note: '24 hrs ago | Europe',
         },
         {
-            title: 'Macron snap election leaves rivals stunned after EU vote',
+            title: "Ramsay shaken after 'really bad' cycling accident",
             description:
-                "Greek police say initial tests found no injuries that could have caused the TV presenter's death.",
-            note: '24 hrs ago | Europe',
-        },
-        {
-            title: 'Macron snap election leaves rivals stunned after EU vote',
-            description:
-                "Greek police say initial tests found no injuries that could have caused the TV presenter's death.",
-            note: '24 hrs ago | Europe',
+                "The celebrity chef stresses the importance of wearing a helmet, adding that he's lucky to be standing.",
+            note: '24 hrs ago',
         },
     ];
     const dataVideo = [
@@ -101,9 +100,9 @@ function HomePage() {
             note: '24 hrs ago | Europe',
         },
         {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
-            title: 'Macron snap election leaves rivals stunned after EU vote',
-            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/86e0/live/1fb6a5d0-2c0f-11ef-98ee-45d563e0553f.jpg.webp',
+            title: 'At least 14 Hajj pilgrims die in intense heat',
+            description: `Jordan's foreign ministry said its nationals had died "after suffering sun stroke due to the extreme heatwave".`,
             note: '24 hrs ago | Europe',
         },
     ];
@@ -117,11 +116,53 @@ function HomePage() {
             note: '1 day ago | Europe',
         },
         {
-            img: 'https://ichef.bbci.co.uk/images/ic/800xn/p0j3kk9s.jpg.webp',
-            title: 'France revives the 1,000-year-old Cultural Olympiad. We checked it out',
+            img: 'https://ichef.bbci.co.uk/images/ic/1920x1080/p0j3vksd.jpg.webp',
+            title: 'The writers making AI sound human',
             description:
-                "For nearly 1,000 years, the Greek games featured artistic competitions alongside athletic ones. Now, this ancient tradition is inspiring France's new Cultural Olympiad.",
+                "If you're worried about how AI will affect your job, the world of copywriters may offer a glimpse of the future.",
             note: '1 day ago | Europe',
+        },
+    ];
+
+    const data5 = {
+        img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/7774/live/4e0377d0-2be5-11ef-90be-b75b34b0bbb2.jpg.webp',
+        title: 'Hamburg police shoot man with axe ahead of Euros match',
+        description:
+            'Police say they shot and injured the man, ahead of a Euro 2024 match between the Netherlands and Poland.',
+        note: '24 hrs ago | Europe',
+    };
+
+    const data6 = {
+        img: 'https://ichef.bbci.co.uk/news/640/cpsprodpb/0de2/live/731a8cf0-2a43-11ef-a1fa-1b739acc6f54.jpg.webp',
+        title: 'Boy grapples with tradition in Spanish bullfighting town',
+        description: `A new film follows a boy as he tries to square a controversial practice with his family's hopes for him.`,
+        note: '24 hrs ago | Europe',
+    };
+
+    const data7 = [
+        {
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/8b82/live/105ea700-2c27-11ef-a044-9d4367d5b599.jpg.webp',
+            title: `Bellingham - the England hero who 'writes his own scripts'`,
+            description: `Jude Bellingham's remarkable rise continued as he netted England's winner in their Euro 2024 opener against Serbia.`,
+            note: '24 hrs ago | Europe',
+        },
+        {
+            img: 'https://ichef.bbci.co.uk/images/ic/1920x1080/p0j43csb.jpg.webp',
+            title: 'How to apologise effectively',
+            description: `If you're struggling to say you're sorry, AI is happy to help. But can robots handle social intelligence? We put their apologies to the test.`,
+            note: '24 hrs ago | Europe',
+        },
+        {
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/179a/live/fb338880-2bdd-11ef-90be-b75b34b0bbb2.jpg.webp',
+            title: 'Clive Myrie shares emotional toll of broadcasting',
+            description: `The TV anchor shares the impact of reporting from war zones and personal toll of being a prominent public figure.`,
+            note: '24 hrs ago | Europe',
+        },
+        {
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/3a66/live/b2adbe50-2bc4-11ef-a044-9d4367d5b599.jpg.webp',
+            title: 'The cow hoof trimmer who is watched by millions',
+            description: `Graeme Parker has a huge internet following for his work with cattle in south-west Scotland.`,
+            note: '24 hrs ago | Europe',
         },
     ];
 
@@ -153,7 +194,9 @@ function HomePage() {
                     </Typography>
                     <Stack direction={'row'} spacing={2}>
                         {data4.map((data) => (
-                            <HighlightNews data={data} />
+                            <Stack width={'50%'}>
+                                <HighlightNews data={data} />
+                            </Stack>
                         ))}
                     </Stack>
                 </Stack>
@@ -165,12 +208,20 @@ function HomePage() {
                     </Typography>
                     <Grid container gap={2}>
                         <Grid sm={9 - 0.2}>
-                            <MoreNews1 data={data2[1]} />
+                            <MoreNews1 data={data5} />
                         </Grid>
                         <Grid sm={3 - 0.2}>
-                            <SubNews data={data2[1]} />
+                            <SubNews data={data6} />
                         </Grid>
-                        <Grid sm={2.25 - 0.2}>
+
+                        {data7.map((data) => {
+                            return (
+                                <Grid sm={2.25 - 0.2}>
+                                    <MoreNews data={data} />
+                                </Grid>
+                            );
+                        })}
+                        {/* <Grid sm={2.25 - 0.2}>
                             <MoreNews data={data2[1]} />
                         </Grid>
                         <Grid sm={2.25 - 0.2}>
@@ -181,7 +232,7 @@ function HomePage() {
                         </Grid>
                         <Grid sm={2.25 - 0.2}>
                             <MoreNews data={data2[1]} />
-                        </Grid>
+                        </Grid> */}
                         <Grid sm={3 - 0.2}>
                             <TextNews data={data3[1]} />
                             <TextNews data={data3[2]} />
