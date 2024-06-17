@@ -37,58 +37,43 @@ function HomePage() {
     ];
     const dataVideo = [
         {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
-            title: 'Macron snap election leaves rivals stunned after EU vote',
-            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
-            note: '24 hrs ago | Europe',
+            img: 'https://ichef.bbci.co.uk/news/480/cpsprodpb/bcd4/live/72635f20-2b39-11ef-90be-b75b34b0bbb2.jpg.webp',
+            title: 'People left dangling upside down on amusement park ride',
+            description:
+                'Footage recorded by an eyewitness shows the moment people got stuck on a ride in Portland, Oregon.',
+            note: '2 days ago',
         },
         {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
-            title: 'Macron snap election leaves rivals stunned after EU vote',
-            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
-            note: '24 hrs ago | Europe',
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/4124/live/d40f9eb0-2b56-11ef-a044-9d4367d5b599.jpg.webp',
+            title: 'Watch: Kate attends Trooping the Colour - in 60 seconds',
+            description: `The parade, watched by thousands, was the Princess of Wales's first public appearance since her cancer diagnosis in January.`,
+            note: '2 days ago | UK',
         },
         {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
-            title: 'Macron snap election leaves rivals stunned after EU vote',
-            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
-            note: '24 hrs ago | Europe',
+            img: 'https://ichef.bbci.co.uk/images/ic/480x270/p0j49nv1.jpg.webp',
+            title: 'What makes the emperor penguin an egg-cellent father',
+            description:
+                'In the BBC Select documentary Penguins: Spy in the Huddle, we explore the world of penguin fathers.',
+            note: '2 June 2024 | World of wonders',
         },
         {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
-            title: 'Macron snap election leaves rivals stunned after EU vote',
-            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
-            note: '24 hrs ago | Europe',
+            img: 'https://ichef.bbci.co.uk/news/480/cpsprodpb/0087/live/5dda9c10-2ba9-11ef-90be-b75b34b0bbb2.jpg.webp',
+            title: 'Cow hit by UK police car gets to its feet',
+            description:
+                'Footage shared with the BBC shows the animal looking stunned in the aftermath of the incident on a Surrey street.',
+            note: '1 days ago | Surrey',
         },
         {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
-            title: 'Macron snap election leaves rivals stunned after EU vote',
-            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
-            note: '24 hrs ago | Europe',
+            img: 'https://ichef.bbci.co.uk/news/480/cpsprodpb/6df1/live/b9930a10-2aa0-11ef-bdc5-41d7421c2adf.jpg.webp',
+            title: 'Pope jokes around as he hosts famous comedians',
+            description: 'Pope jokes around as he hosts famous comedians',
+            note: '3 days ago | Europe',
         },
         {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
-            title: 'Macron snap election leaves rivals stunned after EU vote',
-            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
-            note: '24 hrs ago | Europe',
-        },
-        {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
-            title: 'Macron snap election leaves rivals stunned after EU vote',
-            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
-            note: '24 hrs ago | Europe',
-        },
-        {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
-            title: 'Macron snap election leaves rivals stunned after EU vote',
-            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
-            note: '24 hrs ago | Europe',
-        },
-        {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/9a46/live/be5af210-2721-11ef-baa7-25d483663b8e.jpg.webp',
-            title: 'Macron snap election leaves rivals stunned after EU vote',
-            description: 'As France calls for a snap election, other European countries weigh their gains and losses.',
-            note: '24 hrs ago | Europe',
+            img: 'https://ichef.bbci.co.uk/news/480/cpsprodpb/298c/live/41a6a480-2974-11ef-a1fa-1b739acc6f54.png.webp',
+            title: `Vet's top money saving tips for pet owners`,
+            description: 'Keeping your pet on a healthy diet and brushing its teeth can help save pennies, says vet.',
+            note: '2 days ago | Wales',
         },
     ];
 
@@ -161,7 +146,7 @@ function HomePage() {
         {
             img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/3a66/live/b2adbe50-2bc4-11ef-a044-9d4367d5b599.jpg.webp',
             title: 'The cow hoof trimmer who is watched by millions',
-            description: `Graeme Parker has a huge internet following for his work with cattle in south-west Scotland.`,
+            description: `Graeme Parker has a huge internet following for his work with cattle in south-west Scotland.  `,
             note: '24 hrs ago | Europe',
         },
     ];
@@ -261,7 +246,7 @@ function HomePage() {
                     </Stack>
                 </Stack>
                 {/* Outstanding */}
-                <Stack pt={'471px'} width={1200} pb={2}>
+                <Stack pt={'471px'} width={1200} pb={5} mt={5}>
                     <OnlyNews />
                 </Stack>
 
