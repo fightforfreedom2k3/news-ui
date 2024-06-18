@@ -6,7 +6,6 @@ import HighlightNews from '../../components/pageComponent/HighlightNews/Highligh
 import MoreNews from '../../components/pageComponent/MoreNews/MoreNews';
 import MoreNews1 from '../../components/pageComponent/MoreNews1/MoreNews1';
 import EmblaCarousel from '../../components/EmblaCarousel/EmblaCarousel';
-import { Grid3x3 } from '@mui/icons-material';
 import CategoryNews from '../../components/pageComponent/CategoryNews/CategoryNews';
 import OnlyNews from '../../components/pageComponent/OnlyNews/OnlyNews';
 function HomePage() {
@@ -151,6 +150,60 @@ function HomePage() {
         },
     ];
 
+    const data8 = [
+        {
+            title: `Zuma's MK party to join South Africa's opposition alliance`,
+            description: `The Russian fleet had been anchored just 90 miles from the US state of Florida.`,
+        },
+        {
+            title: `Greek opposition urges investigation after BBC migrant deaths report`,
+            description: `A BBC investigation found the coastguard had caused dozens of deaths over three years, according to witnesses.`,
+        },
+    ];
+
+    const data9 = [
+        {
+            category: `Business`,
+            link: [
+                `Boeing boss admits culture 'far from perfect'`,
+                `London becomes Europe's largest stock market again`,
+                `US surgeon general wants social media warning labels`,
+            ],
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/72ed/live/b0aaf780-2cd7-11ef-9a23-9bdc7e739208.jpg.webp',
+            description: `Regulators allege Adobe failed to properly disclose subscription terms and made it too onerous to cancel. `,
+        },
+        {
+            category: `Culture`,
+            link: [
+                `'Keep calm' posters estimated to sell for £6k`,
+                `Angelina Jolie and Daniel Radcliffe win first Tony Awards`,
+                `Coldplay to make vinyl albums from plastic bottles`,
+            ],
+            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/0de2/live/731a8cf0-2a43-11ef-a1fa-1b739acc6f54.jpg.webp',
+            description: `A new film follows a boy as he tries to square a controversial practice with his family's hopes for him.`,
+        },
+        {
+            category: `Travel`,
+            link: [
+                `Is it ethical to travel to the ends of the Earth?`,
+                `Why the US is the top country for tourism in 2024`,
+                `Buenos Aires's best queer tango experiences`,
+            ],
+            img: 'https://ichef.bbci.co.uk/images/ic/1920x1080/p0j3yyp4.jpg.webp',
+            description: `Every spring, almost 100,000 seabirds – guillemots, great skuas, razorbills and puffins – descend on the small island of Handa, just off Scotland's far north-west coast.`,
+        },
+        {
+            category: `World’s Table`,
+            link: [
+                `Buenos Aires's best queer tango experiences`,
+                `A chicken recipe so good its origin is being fought in court`,
+                `What will we eat on the Moon?`,
+            ],
+            img: 'https://ichef.bbci.co.uk/images/ic/1920x1080/p0hxx46p.jpg.webp',
+            description: `Akin to France's heartier, spicier, richer boeuf bourguignon, "alcatra" is synonymous with a single island in the remote Azores archipelago.`,
+        },
+    ];
+
     return (
         <>
             <Stack alignItems={'center'} justifyContent={'center'} borderBottom={'1px solid black'}>
@@ -206,22 +259,16 @@ function HomePage() {
                                 </Grid>
                             );
                         })}
-                        {/* <Grid sm={2.25 - 0.2}>
-                            <MoreNews data={data2[1]} />
-                        </Grid>
-                        <Grid sm={2.25 - 0.2}>
-                            <MoreNews data={data2[1]} />
-                        </Grid>
-                        <Grid sm={2.25 - 0.2}>
-                            <MoreNews data={data2[1]} />
-                        </Grid>
-                        <Grid sm={2.25 - 0.2}>
-                            <MoreNews data={data2[1]} />
-                        </Grid> */}
+
                         <Grid sm={3 - 0.2}>
+                            {data8.map((data) => {
+                                return <TextNews data={data} />;
+                            })}
+                        </Grid>
+                        {/* <Grid sm={3 - 0.2}>
                             <TextNews data={data3[1]} />
                             <TextNews data={data3[2]} />
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                 </Stack>
                 {/* Must Watch */}
@@ -253,7 +300,13 @@ function HomePage() {
                 {/* News By Category */}
                 <Stack width={1200} borderTop={'2px solid #e2e2e2'} pb={5}>
                     <Grid className="Hoang" container gap={3}>
-                        <Grid sm={3 - 0.3}>
+                        {data9.map((data) => (
+                            <Grid sm={3 - 0.3}>
+                                <CategoryNews data={data} />
+                            </Grid>
+                        ))}
+
+                        {/* <Grid sm={3 - 0.3}>
                             <CategoryNews />
                         </Grid>
                         <Grid sm={3 - 0.3}>
@@ -264,7 +317,7 @@ function HomePage() {
                         </Grid>
                         <Grid sm={3 - 0.3}>
                             <CategoryNews />
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                 </Stack>
             </Stack>

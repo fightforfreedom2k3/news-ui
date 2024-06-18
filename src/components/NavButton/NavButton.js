@@ -67,11 +67,11 @@ export default function NavButton() {
     return (
         <Stack direction={'row'}>
             <IconButton onClick={toggleDrawer((preValue) => !preValue)}>
-                <MenuIcon fontSize="large"></MenuIcon>
+                <MenuIcon fontSize="medium"></MenuIcon>
             </IconButton>
 
             <IconButton onClick={toggleDrawer((preValue) => !preValue)}>
-                <SearchIcon fontSize="large"></SearchIcon>
+                <SearchIcon fontSize="medium"></SearchIcon>
             </IconButton>
 
             <Drawer sx={{ '&.MuiDrawer-paper': { zIndex: 100000 } }} open={open} onClose={toggleDrawer(false)}>

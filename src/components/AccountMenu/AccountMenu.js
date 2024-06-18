@@ -9,6 +9,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import PersonIcon from '@mui/icons-material/Person';
+import { Typography } from '@mui/material';
 
 export default function AccountMenu() {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -21,7 +22,7 @@ export default function AccountMenu() {
     };
     return (
         <React.Fragment>
-            <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center', paddingTop: 2 }}>
                 <Tooltip title="Account settings">
                     <IconButton
                         onClick={handleClick}
@@ -31,7 +32,7 @@ export default function AccountMenu() {
                         aria-haspopup="true"
                         aria-expanded={open ? 'true' : undefined}
                     >
-                        <PersonIcon fontSize="large" /> Your Account
+                        <PersonIcon fontSize="small" /> <Typography fontSize={'small'}>Your Account</Typography>
                     </IconButton>
                 </Tooltip>
             </Box>
