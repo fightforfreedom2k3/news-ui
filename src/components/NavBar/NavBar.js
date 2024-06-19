@@ -43,6 +43,7 @@ export default function NavBar() {
             justifyContent={'center'}
             spacing={3}
             borderBottom={'1px solid #e2e2e2'}
+            pt={1}
         >
             {arrayObject.map((object) => {
                 return (
@@ -58,7 +59,9 @@ export default function NavBar() {
                             // ':active': { backgroundColor: '#e2e2e2' },
                         }}
                     >
-                        <Typography color={'black'}>{object.text}</Typography>
+                        <Typography fontWeight={1000} fontSize={'14px'} color={'black'}>
+                            {object.text}
+                        </Typography>
                     </Stack>
                 );
             })}
