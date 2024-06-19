@@ -83,7 +83,7 @@ function Header() {
                     </Stack>
                     <Stack height={1} pl={1} borderLeft={'1px solid black'} pr={17}>
                         <IconButton>
-                            <MenuIcon sx={{ fontSize: 20, color: 'black' }} />{' '}
+                            <MenuIcon sx={{ fontSize: 20, color: 'black' }} />
                             <Typography fontSize={'14px'} fontWeight={1000} sx={{ color: 'black' }}>
                                 More
                             </Typography>
