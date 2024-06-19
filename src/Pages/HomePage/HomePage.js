@@ -204,6 +204,13 @@ function HomePage() {
         },
     ];
 
+    const data1 = {
+        img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/f6c7/live/fb4ccc50-273c-11ef-a0aa-318f04db7c53.jpg.webp',
+        title: 'Macron snap election leaves rivals stunned after EU vote',
+        description: 'Finance Minister Bruno Le Maire said the vote could have "serious consequences" for France.',
+        note: '24 hrs ago | Europe',
+    };
+
     return (
         <>
             <Stack alignItems={'center'} justifyContent={'center'} borderBottom={'1px solid black'}>
@@ -217,7 +224,7 @@ function HomePage() {
                         </Stack>
                     </Grid>
                     <Grid sm={6 - 0.4}>
-                        <MainNews />
+                        <MainNews data={data1} />
                     </Grid>
                     <Grid sm={3 - 0.4}>
                         {data3.map((data) => (

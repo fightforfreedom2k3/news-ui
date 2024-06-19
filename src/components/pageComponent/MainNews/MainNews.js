@@ -1,20 +1,13 @@
 import { Stack, Box, Typography, Card, CardContent, CardActionArea, CardMedia, Divider } from '@mui/material';
 
-export default function MainNews() {
+export default function MainNews({ data }) {
     return (
         <p>
             <Card component={'div'} onClick={() => {}} sx={{ cursor: 'pointer', boxShadow: 'none' }}>
                 {/* Image */}
                 <CardActionArea>
                     <Stack>
-                        <CardMedia
-                            component={'img'}
-                            src={
-                                'https://ichef.bbci.co.uk/news/1536/cpsprodpb/f6c7/live/fb4ccc50-273c-11ef-a0aa-318f04db7c53.jpg.webp'
-                            }
-                            height={'291px'}
-                            alt={'green iguana'}
-                        ></CardMedia>
+                        <CardMedia component={'img'} src={data.img} height={'291px'} alt={'green iguana'}></CardMedia>
                     </Stack>
                 </CardActionArea>
                 <CardContent className="text-wrapper" sx={{ p: 0, pt: 2 }}>
@@ -29,11 +22,11 @@ export default function MainNews() {
                             textTransform={'none'}
                             textOverflow={'anywhere'}
                         >
-                            Macron snap election leaves rivals stunned after EU vote
+                            {data.title}
                         </Typography>
                         {/* Description */}
                         <Typography fontWeight={400} fontSize={'14px'} lineHeight={'18px'} marginBottom={'4px'}>
-                            Finance Minister Bruno Le Maire said the vote could have "serious consequences" for France.
+                            {data.description}
                         </Typography>
                         {/* Note */}
                         <Typography fontWeight={-1000} fontSize={'12px'} letterSpacing={'-0.12px'}>
