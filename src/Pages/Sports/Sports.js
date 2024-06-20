@@ -2,6 +2,7 @@ import { Box, Grid, Stack, Typography } from '@mui/material';
 import MainNews from '../../components/pageComponent/MainNews/MainNews';
 import SubNews from '../../components/pageComponent/SubNews/SubNews';
 import TextNews from '../../components/pageComponent/TextNews/TextNews';
+import ScoreNews from '../../components/pageComponent/ScoreNews/ScoreNews';
 
 function Sports() {
     const data1 = {
@@ -258,7 +259,35 @@ function Sports() {
                         <Grid sm={2 - 0.2} sx={{ backgroundColor: '#f8f8f8' }}></Grid>
                     </Grid>
                 </Stack>
-                {/* Contact */}
+            </Stack>
+
+            {/* Scores & Fixtures */}
+            <Stack
+                position={'relative'}
+                margin={'auto'}
+                width={'100vw'}
+                height={'241px'}
+                sx={{ backgroundColor: '#F6F6F6' }}
+                alignItems={'center'}
+            >
+                <Stack width={1300}>
+                    <Stack pt={2}>
+                        <Typography
+                            fontWeight={1000}
+                            fontSize={'1.5rem'}
+                            sx={{ cursor: 'pointer', ':hover': { textDecoration: 'underline', color: 'green' } }}
+                        >
+                            Scores & Fixtures
+                        </Typography>
+                    </Stack>
+                    <Stack maxHeight={'161px'} pt={1} pb={1}>
+                        <ScoreNews />
+                    </Stack>
+                </Stack>
+            </Stack>
+
+            {/* Contact */}
+            <Stack width={1300}>
                 <Stack pt={5} pb={5}>
                     <Typography fontWeight={1000} fontSize={'1.5rem'}>
                         Find us here
