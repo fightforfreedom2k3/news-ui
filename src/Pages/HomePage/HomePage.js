@@ -209,6 +209,10 @@ function HomePage() {
         title: 'Macron snap election leaves rivals stunned after EU vote',
         description: 'Finance Minister Bruno Le Maire said the vote could have "serious consequences" for France.',
         note: '24 hrs ago | Europe',
+        relate: [
+            `Europe's night of election drama capped by Macron bombshell`,
+            `Far right makes gains in EU election but it could struggle to unite`,
+        ],
     };
 
     return (

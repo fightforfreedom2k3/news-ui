@@ -10,6 +10,7 @@ function Sports() {
         description:
             'Follow live as Croatia face Albania in Hamburg with both sides looking for a first win in Group B.',
         note: `European Championship`,
+        relate: [],
     };
 
     const data2 = [
@@ -19,19 +20,19 @@ function Sports() {
             note: `European Championship`,
         },
         {
-            title: `Euro 2024: Build-up to crucial Scotland tie with Switzerland`,
-            img: `https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/08cf/live/7e92cc80-2e3c-11ef-bdc5-41d7421c2adf.jpg`,
+            title: `Scotland draw with Switzerland to keep Euro 2024 last-16 hopes alive`,
+            img: `https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/6168/live/85046960-2e8d-11ef-bdc5-41d7421c2adf.jpg`,
             note: `European Championship`,
         },
         {
-            title: `Euro 2024: Build-up to crucial Scotland tie with Switzerland`,
-            img: `https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/08cf/live/7e92cc80-2e3c-11ef-bdc5-41d7421c2adf.jpg`,
+            title: `Musiala shines as Germany beat Hungary to reach last 16`,
+            img: `https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/9170/live/977d3890-2e67-11ef-a044-9d4367d5b599.jpg`,
             note: `European Championship`,
         },
         {
-            title: `Euro 2024: Build-up to crucial Scotland tie with Switzerland`,
-            img: `https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/08cf/live/7e92cc80-2e3c-11ef-bdc5-41d7421c2adf.jpg`,
-            note: `European Championship`,
+            title: `Fleeing Kabul, chasing gold - the story of a refugee Olympian`,
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/d2ad/live/052be470-2a69-11ef-bdc5-41d7421c2adf.jpg`,
+            note: `5h`,
         },
     ];
 
@@ -47,34 +48,36 @@ function Sports() {
             note: `Portugal | 15h`,
         },
         {
-            title: `Why 'symbol' Ronaldo remains Portugal's star draw`,
-            note: `Portugal | 15h`,
+            title: `IBF v Usyk - power struggle brewing in boxing`,
+            note: `Boxing`,
         },
     ];
 
     const data5 = [
         {
-            title: `Why 'symbol' Ronaldo remains Portugal's star draw`,
-            note: `Portugal | 15h`,
+            title: `England should not take wins for granted - Southgate`,
+            note: `England | 18h`,
         },
         {
-            title: `Why 'symbol' Ronaldo remains Portugal's star draw`,
-            note: `Portugal | 15h`,
+            title: `Raducanu one of four major winners given Wimbledon wildcards`,
+            note: `Tennis | 8h`,
         },
         {
-            title: `Why 'symbol' Ronaldo remains Portugal's star draw`,
-            note: `Portugal | 15h`,
+            title: `Murray hopes back injury does not affect Wimbledon`,
+            note: `Tennis | 9h`,
         },
         {
-            title: `Why 'symbol' Ronaldo remains Portugal's star draw`,
-            note: `Portugal | 15h`,
+            title: `Which teams at Euros have impressed BBC pundits so far`,
+            note: `Football | 19h`,
         },
     ];
 
     const data6 = {
-        title: `France 'uncertain' if Mbappe can face Netherlands`,
-        img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/ade4/live/3d695b20-2db5-11ef-8639-058990b4462c.jpg`,
-        note: `France | 18h`,
+        title: `China picks swimmers caught in doping scandal for Paris`,
+        img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/7d83/live/f53c4b50-2e77-11ef-8fb1-2db0e7cb7ea3.jpg`,
+        note: `Olympic Games | 7h`,
+        description: `China selects 11 swimmers that are embroiled in a doping scandal for the Paris Olympics. `,
+        relate: [],
     };
 
     const data7 = [
@@ -84,34 +87,74 @@ function Sports() {
             note: `Tennis | 19h`,
         },
         {
-            title: `Alcaraz starts Queen's defence with win`,
-            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/fa41/live/4ce16410-2da8-11ef-a044-9d4367d5b599.jpg`,
-            note: `Tennis | 19h`,
+            title: `Aston Villa agree deal worth up to £40m to sign Chelsea's Maatsen`,
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/b266/live/776e9950-2e6b-11ef-9359-c1572eab09c7.jpg`,
+            note: `Premier League | 9h`,
         },
         {
-            title: `Alcaraz starts Queen's defence with win`,
-            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/fa41/live/4ce16410-2da8-11ef-a044-9d4367d5b599.jpg`,
-            note: `Tennis | 19h`,
+            title: ` 'Italy will play Spain like they are dressed in Giorgio Armani'`,
+            img: `https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/6fc7/live/3fc1b4e0-2e77-11ef-bdc5-41d7421c2adf.jpg`,
+            note: `European Championship`,
         },
         {
-            title: `Alcaraz starts Queen's defence with win`,
-            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/fa41/live/4ce16410-2da8-11ef-a044-9d4367d5b599.jpg`,
-            note: `Tennis | 19h`,
+            title: `'Special' Mainoo before Alexander-Arnold? England set for Denmark`,
+            img: `https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/f5a3/live/ea7dde30-2e55-11ef-bdc5-41d7421c2adf.png`,
+            note: `European Championship`,
         },
         {
-            title: `Alcaraz starts Queen's defence with win`,
-            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/fa41/live/4ce16410-2da8-11ef-a044-9d4367d5b599.jpg`,
-            note: `Tennis | 19h`,
+            title: `US sprinter Knighton cleared for Games after failed test`,
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/00a2/live/4a83b530-2e7d-11ef-8fb1-2db0e7cb7ea3.jpg`,
+            note: `Olympic Games | 6h`,
         },
         {
-            title: `Alcaraz starts Queen's defence with win`,
-            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/fa41/live/4ce16410-2da8-11ef-a044-9d4367d5b599.jpg`,
-            note: `Tennis | 19h`,
+            title: `Albania equalise in injury time in Croatia thriller`,
+            img: `https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/de3f/live/ab0b6e60-2e4c-11ef-bdc5-41d7421c2adf.png`,
+            note: `European Championship`,
         },
     ];
+
+    const data8 = {
+        title: `Euro 2024 tournament schedule and group listings`,
+        img: `https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/2c3f/live/90532990-2380-11ef-a13a-0b8c563da930.jpg`,
+        relate: [],
+        description: `All of the fixtures and kick-off times for Euro 2024.`,
+    };
+
+    const data9 = [
+        {
+            title: `France's Mbappe trains with bandage after nose break`,
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/d603/live/9d9d7b60-2e5b-11ef-8037-1d36f173811f.jpg`,
+            note: `France | 11h`,
+        },
+        {
+            title: `'If Ronaldo reads it, so will I' - Gordon on love of psychology books`,
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/0765/live/d7416090-2e1d-11ef-84ac-a74c8743f290.jpg`,
+            note: `Premier League | 1d`,
+        },
+    ];
+
+    const data10 = [
+        {
+            title: `'Don't worry England fans - I missed out on Musiala too'`,
+            note: `Germany | 1d`,
+        },
+        {
+            title: `Irreplaceable or burden? Ronaldo debate sweeps Portugal`,
+            note: `Portugal | 1d`,
+        },
+        {
+            title: `Why are Mbappe and team-mates speaking out on French elections?`,
+            note: `France | 1d`,
+        },
+        {
+            title: `Can you name Thursday's Euros player?`,
+            note: `European Championship | 6h`,
+        },
+    ];
+
     return (
         <Stack pt={3} alignItems={'center'} justifyContent={'center'}>
-            <Stack width={1200}>
+            <Stack width={1300}>
                 <Grid container gap={2} borderBottom={'1px solid black'} pb={4}>
                     <Grid sm={6 - 0.2} container gap={2}>
                         <Grid sm={12 - 0.2}>
@@ -150,14 +193,14 @@ function Sports() {
                         More top stories
                     </Typography>
                     <Grid container gap={3} pt={2} borderBottom={'1px solid black'} pb={4}>
-                        <Grid sm={6 - 0.3}>
+                        <Grid sm={5 - 0.3}>
                             <MainNews data={data6} />
                         </Grid>
-                        <Grid sm={6}>
-                            <Grid container gap={3}>
+                        <Grid sm={7}>
+                            <Grid container gap={2}>
                                 {data7.map((data) => {
                                     return (
-                                        <Grid sm={4 - 0.6}>
+                                        <Grid sm={4 - 0.2}>
                                             <SubNews data={data} />
                                         </Grid>
                                     );
@@ -166,7 +209,32 @@ function Sports() {
                         </Grid>
                     </Grid>
                 </Stack>
-                <h1>Hoang</h1>
+                {/* Euro 2024 */}
+                <Stack pt={3} pb={3}>
+                    <Typography fontWeight={1000} fontSize={'1.5rem'}>
+                        More Euro 2024 news and analysis
+                    </Typography>
+                    <Grid container gap={2}>
+                        <Grid sm={5 - 0.2}>
+                            <MainNews data={data8} />
+                        </Grid>
+                        <Grid sm={5 - 0.2}>
+                            <Grid container gap={2}>
+                                <Grid sm={6 - 0.2}>
+                                    {data9.map((data) => {
+                                        return <SubNews data={data} />;
+                                    })}
+                                </Grid>
+                                <Grid sm={6 - 0.2}>
+                                    {data10.map((data) => {
+                                        return <TextNews data={data} />;
+                                    })}
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                        <Grid sm={2 - 0.2} sx={{ backgroundColor: '#f8f8f8' }}></Grid>
+                    </Grid>
+                </Stack>
             </Stack>
         </Stack>
     );

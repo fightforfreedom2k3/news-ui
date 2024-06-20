@@ -30,11 +30,25 @@ export default function MainNews({ data }) {
                         </Typography>
                         {/* Note */}
                         <Typography fontWeight={-1000} fontSize={'12px'} letterSpacing={'-0.12px'}>
-                            24 hrs ago | Europe
+                            {data.note}
                         </Typography>
 
                         {/* Related */}
-                        <Typography
+                        {data.relate.map((text) => {
+                            return (
+                                <Typography
+                                    sx={{ ':hover': { textDecoration: 'underline' } }}
+                                    fontWeight={1000}
+                                    fontSize={'16px'}
+                                    lineHeight={'20px'}
+                                    letterSpacing={'-0.32px'}
+                                    textTransform={'none'}
+                                >
+                                    {text}
+                                </Typography>
+                            );
+                        })}
+                        {/* <Typography
                             sx={{ ':hover': { textDecoration: 'underline' } }}
                             fontWeight={1000}
                             fontSize={'16px'}
@@ -54,7 +68,7 @@ export default function MainNews({ data }) {
                             textTransform={'none'}
                         >
                             Far right makes gains in EU election but it could struggle to unite
-                        </Typography>
+                        </Typography> */}
                         {/* ---------------- */}
                     </Stack>
                 </CardContent>
