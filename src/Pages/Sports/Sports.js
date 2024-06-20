@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography } from '@mui/material';
+import { Box, Grid, Stack, Typography } from '@mui/material';
 import MainNews from '../../components/pageComponent/MainNews/MainNews';
 import SubNews from '../../components/pageComponent/SubNews/SubNews';
 import TextNews from '../../components/pageComponent/TextNews/TextNews';
@@ -152,6 +152,29 @@ function Sports() {
         },
     ];
 
+    const datasocial = [
+        {
+            name: `Instagram`,
+            img: `https://ichef.bbci.co.uk/ace/standard/320/cpsprodpb/678a/live/d13c3cd0-e13b-11ee-8bf3-195418ba9285.png`,
+        },
+        {
+            name: `Tiktok`,
+            img: `https://ichef.bbci.co.uk/ace/standard/320/cpsprodpb/b4d2/live/183e2f80-e13c-11ee-9410-0f893255c2a0.png`,
+        },
+        {
+            name: `Facebook`,
+            img: `https://ichef.bbci.co.uk/ace/standard/320/cpsprodpb/e552/live/e1dab170-e13b-11ee-8bf3-195418ba9285.png`,
+        },
+        {
+            name: `X`,
+            img: `https://ichef.bbci.co.uk/ace/standard/320/cpsprodpb/76d5/live/c9110540-e13b-11ee-8bf3-195418ba9285.png`,
+        },
+        {
+            name: `Youtube`,
+            img: `https://ichef.bbci.co.uk/ace/standard/320/cpsprodpb/32f8/live/f44c1150-e13b-11ee-860f-4b0b053e4cd0.png`,
+        },
+    ];
+
     return (
         <Stack pt={3} alignItems={'center'} justifyContent={'center'}>
             <Stack width={1300}>
@@ -234,6 +257,52 @@ function Sports() {
                         </Grid>
                         <Grid sm={2 - 0.2} sx={{ backgroundColor: '#f8f8f8' }}></Grid>
                     </Grid>
+                </Stack>
+                {/* Contact */}
+                <Stack pt={5} pb={5}>
+                    <Typography fontWeight={1000} fontSize={'1.5rem'}>
+                        Find us here
+                    </Typography>
+                    <Grid container gap={1} pt={3} pb={3}>
+                        {datasocial.map((data) => {
+                            return (
+                                <Grid sm={2.4 - 0.1}>
+                                    <Stack
+                                        direction={'row'}
+                                        sx={{
+                                            ':hover': { textDecoration: 'underline', color: '#387B12' },
+                                            cursor: 'pointer',
+                                        }}
+                                        component={'div'}
+                                    >
+                                        <Box component={'img'} src={data.img} height={'111px'} width={'111px'}></Box>
+                                        <Stack pt={5.5} pl={1}>
+                                            <Typography fontWeight={1000} fontSize={'1.3rem'}>
+                                                {data.name}
+                                            </Typography>
+                                        </Stack>
+                                    </Stack>
+                                </Grid>
+                            );
+                        })}
+                    </Grid>
+                    <Stack direction={'row'} spacing={3} pt={2}>
+                        <Typography fontSize={'1.1rem'}>Find out more:</Typography>
+                        <Typography
+                            fontSize={'1.1rem'}
+                            fontWeight={1000}
+                            sx={{ textDecoration: 'underline', ':hover': { color: '#387B12' }, cursor: 'pointer' }}
+                        >
+                            Sport App
+                        </Typography>
+                        <Typography
+                            fontSize={'1.1rem'}
+                            fontWeight={1000}
+                            sx={{ textDecoration: 'underline', ':hover': { color: '#387B12' }, cursor: 'pointer' }}
+                        >
+                            Help & FAQs
+                        </Typography>
+                    </Stack>
                 </Stack>
             </Stack>
         </Stack>
