@@ -50,7 +50,14 @@ export default function NavBar2() {
                 justifyContent={'center'}
                 br={'1px solid #e2e2e2'}
             >
-                <IconButton sx={{ color: 'black' }}>
+                <IconButton
+                    sx={{ color: 'black' }}
+                    onClick={() => {
+                        if (window) {
+                            window.location.href = '/account';
+                        }
+                    }}
+                >
                     <PersonIcon fontSize="medium" />{' '}
                     <Typography fontWeight={1000} fontSize={'14px'}>
                         YourAccount

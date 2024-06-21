@@ -8,6 +8,8 @@ import Register from '../Pages/Auth/Register';
 import Business from '../Pages/Business/Business';
 import Innovation from '../Pages/Innovation/Innovation';
 import Culture from '../Pages/Culture/Culture';
+import Account from '../Pages/Account/Account';
+import Setting from '../Pages/Setting/Setting';
 
 //Public routes
 const publicRouter = [
@@ -19,6 +21,8 @@ const publicRouter = [
     { path: '/business', component: Business },
     { path: '/innovation', component: Innovation },
     { path: '/culture', component: Culture },
+    { path: '/account', component: Account, layout: null },
+    { path: '/setting', component: Setting, layout: null },
 ];
 
 //Private routes
