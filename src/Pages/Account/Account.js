@@ -54,6 +54,9 @@ export default function () {
                                     fontWeight={1000}
                                     fontSize={'16px'}
                                     sx={{ ':hover': { textDecoration: 'underline' } }}
+                                    onClick={() => {
+                                        window.location.href = '/setting';
+                                    }}
                                 >
                                     Setting
                                 </Typography>
@@ -64,6 +67,9 @@ export default function () {
                                     fontWeight={1000}
                                     fontSize={'16px'}
                                     sx={{ ':hover': { textDecoration: 'underline' } }}
+                                    onClick={() => {
+                                        window.location.href = '/login';
+                                    }}
                                 >
                                     Sing out
                                 </Typography>
@@ -112,31 +118,32 @@ export default function () {
             </Stack>
             <Stack
                 width={'100vw'}
-                height={'376px'}
+                height={'700px'}
                 sx={{
                     backgroundImage: `url('https://static.files.bbci.co.uk/account/id-profile/1599/css/img/privacy_grey_desktop.png')`,
+                    backgroundSize: 'cover',
                 }}
-                alignItems={'center'}
+                // alignItems={'center'}
                 justifyContent={'center'}
                 direction={'row'}
             >
-                <Stack width={1300} height={'376px'} pt={5}>
+                <Stack width={1300} height={'376px'} pt={10}>
                     <Grid container>
                         <Grid sm={6}>
                             <Stack>
-                                <Typography fontSize={'32px'} lineHeight={'36px'} fontWeight={1000}>
+                                <Typography fontSize={'36px'} lineHeight={'36px'} fontWeight={1000}>
                                     Your privacy and the News Project
                                 </Typography>
                             </Stack>
                             <Stack>
-                                <Typography fontSize={'16px'} lineHeight={'20px'} pt={3}>
+                                <Typography fontSize={'20px'} lineHeight={'20px'} pt={3}>
                                     Want to know what's happening with your info and how you can take control?
                                 </Typography>
                             </Stack>
                             <Stack component={'div'} sx={{ cursor: 'pointer' }}>
                                 <Typography
                                     sx={{ textDecoration: 'underline', ':hover': { color: '#005bc8' } }}
-                                    fontSize={'16px'}
+                                    fontSize={'20px'}
                                     lineHeight={'20px'}
                                     fontWeight={1000}
                                     pt={3}
