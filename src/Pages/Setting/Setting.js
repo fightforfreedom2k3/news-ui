@@ -84,7 +84,10 @@ export default function Setting() {
                                 borderBottom={'2px solid #e2e2e2'}
                                 justifyContent={'center'}
                                 sx={{
-                                    '&:hover': { '& .MuiTypography-root': { color: '#004ca7' } },
+                                    '&:hover': {
+                                        '& .MuiTypography-root': { color: '#004ca7' },
+                                        borderLeft: '3px solid #006def',
+                                    },
                                 }}
                             >
                                 <Button
@@ -106,7 +109,10 @@ export default function Setting() {
                                 borderBottom={'2px solid #e2e2e2'}
                                 justifyContent={'center'}
                                 sx={{
-                                    '&:hover': { '& .MuiTypography-root': { color: '#004ca7' } },
+                                    '&:hover': {
+                                        '& .MuiTypography-root': { color: '#004ca7' },
+                                        borderLeft: '3px solid #006def',
+                                    },
                                 }}
                             >
                                 <Button
@@ -124,16 +130,52 @@ export default function Setting() {
                                 </Button>
                             </Stack>
                         </Grid>
-                        <Grid sm={9} height={'80vh'} sx={{ backgroundColor: 'white' }} p={3}>
+                        <Grid sm={9} height={'80vh'} sx={{ backgroundColor: 'white' }} p={5}>
                             <Typography fontWeight={1000} fontSize={'2rem'} pb={3}>
                                 Personal details
                             </Typography>
                             <Stack>
-                                <Typography>Email</Typography>
+                                <Typography fontWeight={1000}>Email</Typography>
                                 <Input
                                     placeholder="hoang15122003@gmail.com"
-                                    sx={{ width: '40%', height: '2rem', fontWeight: 1000, fontSize: '1.3rem', pl: 1 }}
+                                    sx={{ width: '50%', height: '2rem', fontWeight: 1000, fontSize: '1.3rem', pl: 1 }}
                                 ></Input>
+                            </Stack>
+                            <Stack pt={2}>
+                                <Typography fontWeight={1000}>Password</Typography>
+                                <Input
+                                    placeholder="********"
+                                    sx={{ width: '50%', height: '2rem', fontWeight: 1000, fontSize: '1.3rem', pl: 1 }}
+                                ></Input>
+                            </Stack>
+                            <Stack pt={2}>
+                                <Typography fontWeight={1000}>Display Name</Typography>
+                                <Input
+                                    placeholder="None set"
+                                    sx={{ width: '50%', height: '2rem', fontWeight: 1000, fontSize: '1.3rem', pl: 1 }}
+                                ></Input>
+                            </Stack>
+                            <Stack pt={2}>
+                                <Typography fontWeight={1000}>Year of Birth</Typography>
+                                <Input
+                                    placeholder="2003"
+                                    sx={{ width: '50%', height: '2rem', fontWeight: 1000, fontSize: '1.3rem', pl: 1 }}
+                                ></Input>
+                            </Stack>
+                            <Stack pt={2}>
+                                <Typography fontWeight={1000}>Country of residence</Typography>
+                                <Input
+                                    placeholder="Vietnam"
+                                    sx={{ width: '50%', height: '2rem', fontWeight: 1000, fontSize: '1.3rem', pl: 1 }}
+                                ></Input>
+                            </Stack>
+                            <Stack pt={5}>
+                                <Typography fontSize={'1.5rem'} fontWeight={1000}>
+                                    Your privacy and the News Project
+                                </Typography>
+                                <Typography>
+                                    Want to know what's happening with your info and how you can take control?
+                                </Typography>
                             </Stack>
                         </Grid>
                     </Grid>
