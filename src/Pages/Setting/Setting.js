@@ -1,8 +1,10 @@
-import { Grid, IconButton, Stack, Typography, Button, Input } from '@mui/material';
+import { Grid, IconButton, Stack, Typography, Button, Input, Box, Divider } from '@mui/material';
 import NavBar2 from '../../components/NavBar2/NavBar2';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LockIcon from '@mui/icons-material/Lock';
 import MailIcon from '@mui/icons-material/Mail';
+import Footer from '../../components/Layout/SportLayout/Footer/Footer';
+import { Image } from '@mui/icons-material';
 export default function Setting() {
     return (
         <Stack>
@@ -130,7 +132,7 @@ export default function Setting() {
                                 </Button>
                             </Stack>
                         </Grid>
-                        <Grid sm={9} height={'80vh'} sx={{ backgroundColor: 'white' }} p={5}>
+                        <Grid sm={9} sx={{ backgroundColor: 'white' }} p={5}>
                             <Typography fontWeight={1000} fontSize={'2rem'} pb={3}>
                                 Personal details
                             </Typography>
@@ -169,18 +171,37 @@ export default function Setting() {
                                     sx={{ width: '50%', height: '2rem', fontWeight: 1000, fontSize: '1.3rem', pl: 1 }}
                                 ></Input>
                             </Stack>
-                            <Stack pt={5}>
-                                <Typography fontSize={'1.5rem'} fontWeight={1000}>
-                                    Your privacy and the News Project
-                                </Typography>
-                                <Typography>
-                                    Want to know what's happening with your info and how you can take control?
-                                </Typography>
-                            </Stack>
                         </Grid>
                     </Grid>
+                    <Divider />
+                    <Stack
+                        pt={7}
+                        sx={{ backgroundColor: '#f5f5f5' }}
+                        direction={'row'}
+                        justifyContent={'space-between'}
+                    >
+                        <Stack gap={2} width={'50%'}>
+                            <Typography fontSize={'2rem'} fontWeight={1000}>
+                                Your privacy and the News Project
+                            </Typography>
+                            <Typography fontSize={'1.3rem'}>
+                                Want to know what's happening with your info and how you can take control?
+                            </Typography>
+                            <Stack sx={{ ':hover': { color: '#004ca7' }, cursor: 'pointer' }}>
+                                <Typography fontWeight={1000}>Find out more</Typography>
+                                <Divider sx={{ width: '7vw' }} />
+                            </Stack>
+                        </Stack>
+                        <Box
+                            component={'img'}
+                            src="https://static.files.bbci.co.uk/account/id-profile/1599/css/img/privacy_grey_desktop.png"
+                            height={'50vh'}
+                            width={'50vw'}
+                        />
+                    </Stack>
                 </Stack>
             </Stack>
+            <Footer />
         </Stack>
     );
 }
