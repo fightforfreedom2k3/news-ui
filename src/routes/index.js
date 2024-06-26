@@ -10,7 +10,9 @@ import Innovation from '../Pages/Innovation/Innovation';
 import Culture from '../Pages/Culture/Culture';
 import Account from '../Pages/Account/Account';
 import Setting from '../Pages/Setting/Setting';
-
+import Privacy from '../Pages/Setting/Privacy';
+import EmailPreferences from '../Pages/Setting/EmailPreferences';
+import NewsDetail from '../Pages/NewsDetail/NewsDetail';
 //Public routes
 const publicRouter = [
     { path: '/', component: HomePage },
@@ -23,6 +25,9 @@ const publicRouter = [
     { path: '/culture', component: Culture },
     { path: '/account', component: Account, layout: null },
     { path: '/setting', component: Setting, layout: null },
+    { path: '/privacy&cookies', component: Privacy, layout: null },
+    { path: '/emailpreferences', component: EmailPreferences, layout: null },
+    { path: '/newsdetail', component: NewsDetail },
 ];
 
 //Private routes

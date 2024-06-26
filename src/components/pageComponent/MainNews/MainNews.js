@@ -3,7 +3,13 @@ import { Stack, Box, Typography, Card, CardContent, CardActionArea, CardMedia, D
 export default function MainNews({ data }) {
     return (
         <p>
-            <Card component={'div'} onClick={() => {}} sx={{ cursor: 'pointer', boxShadow: 'none' }}>
+            <Card
+                component={'div'}
+                onClick={() => {
+                    window.location.href = '/newsdetail';
+                }}
+                sx={{ cursor: 'pointer', boxShadow: 'none' }}
+            >
                 {/* Image */}
                 <CardActionArea>
                     <Stack>

@@ -5,7 +5,7 @@ import LockIcon from '@mui/icons-material/Lock';
 import MailIcon from '@mui/icons-material/Mail';
 import Footer from '../../components/Layout/SportLayout/Footer/Footer';
 import { Image } from '@mui/icons-material';
-export default function Setting() {
+export default function EmailPreferences() {
     return (
         <Stack>
             <NavBar2 />
@@ -59,12 +59,13 @@ export default function Setting() {
                         <Grid sm={3} height={'40vh'}>
                             <Stack
                                 height={'30%'}
-                                borderLeft={'3px solid #006def'}
                                 borderBottom={'2px solid #e2e2e2'}
                                 justifyContent={'center'}
                                 sx={{
-                                    backgroundColor: 'white',
-                                    '&:hover': { '& .MuiTypography-root': { color: '#004ca7' } },
+                                    '&:hover': {
+                                        '& .MuiTypography-root': { color: '#004ca7' },
+                                        borderLeft: '3px solid #006def',
+                                    },
                                 }}
                                 onClick={() => (window.location.href = '/setting')}
                             >
@@ -76,8 +77,8 @@ export default function Setting() {
                                         height: '100%',
                                     }}
                                 >
-                                    <AccountCircleIcon />{' '}
-                                    <Typography pl={2} color={'#525252'} fontWeight={1000}>
+                                    <AccountCircleIcon sx={{ color: '#006def' }} />
+                                    <Typography pl={2} color={'#006def'} fontWeight={1000}>
                                         Personal details
                                     </Typography>
                                 </Button>
@@ -114,14 +115,11 @@ export default function Setting() {
                                 height={'30%'}
                                 borderBottom={'2px solid #e2e2e2'}
                                 justifyContent={'center'}
+                                borderLeft={'3px solid #006def'}
                                 sx={{
                                     '&:hover': {
                                         '& .MuiTypography-root': { color: '#004ca7' },
-                                        borderLeft: '3px solid #006def',
                                     },
-                                }}
-                                onClick={() => {
-                                    window.location.href = '/emailpreferences';
                                 }}
                             >
                                 <Button
@@ -132,8 +130,8 @@ export default function Setting() {
                                         height: '100%',
                                     }}
                                 >
-                                    <MailIcon sx={{ color: '#006def' }} />
-                                    <Typography pl={2} color={'#006def'} fontWeight={1000}>
+                                    <MailIcon sx={{ color: '#525252' }} />
+                                    <Typography pl={2} color={'#525252'} fontWeight={1000}>
                                         Email Preferences
                                     </Typography>
                                 </Button>
@@ -141,43 +139,8 @@ export default function Setting() {
                         </Grid>
                         <Grid sm={9} sx={{ backgroundColor: 'white' }} p={5}>
                             <Typography fontWeight={1000} fontSize={'2rem'} pb={3}>
-                                Personal details
+                                Email Preferences
                             </Typography>
-                            <Stack>
-                                <Typography fontWeight={1000}>Email</Typography>
-                                <Input
-                                    placeholder="hoang15122003@gmail.com"
-                                    sx={{ width: '50%', height: '2rem', fontWeight: 1000, fontSize: '1.3rem', pl: 1 }}
-                                ></Input>
-                            </Stack>
-                            <Stack pt={2}>
-                                <Typography fontWeight={1000}>Password</Typography>
-                                <Input
-                                    placeholder="********"
-                                    sx={{ width: '50%', height: '2rem', fontWeight: 1000, fontSize: '1.3rem', pl: 1 }}
-                                ></Input>
-                            </Stack>
-                            <Stack pt={2}>
-                                <Typography fontWeight={1000}>Display Name</Typography>
-                                <Input
-                                    placeholder="None set"
-                                    sx={{ width: '50%', height: '2rem', fontWeight: 1000, fontSize: '1.3rem', pl: 1 }}
-                                ></Input>
-                            </Stack>
-                            <Stack pt={2}>
-                                <Typography fontWeight={1000}>Year of Birth</Typography>
-                                <Input
-                                    placeholder="2003"
-                                    sx={{ width: '50%', height: '2rem', fontWeight: 1000, fontSize: '1.3rem', pl: 1 }}
-                                ></Input>
-                            </Stack>
-                            <Stack pt={2}>
-                                <Typography fontWeight={1000}>Country of residence</Typography>
-                                <Input
-                                    placeholder="Vietnam"
-                                    sx={{ width: '50%', height: '2rem', fontWeight: 1000, fontSize: '1.3rem', pl: 1 }}
-                                ></Input>
-                            </Stack>
                         </Grid>
                     </Grid>
                     <Divider />

@@ -105,6 +105,7 @@ export default function () {
                                         alignItems={'center'}
                                         justifyContent={'center'}
                                         component={'div'}
+                                        onClick={() => (window.location.href = '/setting')}
                                     >
                                         <Typography fontWeight={1000} color={'white'}>
                                             Continue to Setting

@@ -41,7 +41,7 @@ export default function Footer() {
                     </Stack>
                 </Stack>
                 {/* Note */}
-                <Stack direction={'row'} spacing={1} component={'div'} fontSize={'13px'}>
+                <Stack direction={'row'} spacing={2} component={'div'} fontSize={'13px'}>
                     <Stack sx={{ ':hover': { textDecoration: 'underline' }, cursor: 'pointer' }}>Term of Use</Stack>
                     <Stack sx={{ ':hover': { textDecoration: 'underline' }, cursor: 'pointer' }}>About us</Stack>
                     <Stack sx={{ ':hover': { textDecoration: 'underline' }, cursor: 'pointer' }}>Privacy Policy</Stack>
