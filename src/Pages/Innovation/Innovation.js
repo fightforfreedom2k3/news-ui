@@ -10,6 +10,8 @@ import SubNews from '../../components/pageComponent/SubNews/SubNews';
 import EmblaCarousel from '../../components/EmblaCarousel/EmblaCarousel';
 import MoreNews from '../../components/pageComponent/MoreNews/MoreNews';
 import OnlyNews from '../../components/pageComponent/OnlyNews/OnlyNews';
+import MoreNews2 from '../../components/pageComponent/MoreNews2/MoreNews2';
+import PaginationPage from '../../components/PaginationPage/PaginationPage';
 
 function Innovation() {
     const dataVideo = [
@@ -143,6 +145,68 @@ function Innovation() {
             note: `3 days ago | Technology`,
         },
     ];
+    const data6 = [
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/1e42/live/61e46e20-3244-11ef-a044-9d4367d5b599.jpg.webp`,
+            title: `Einstein atomic bomb letter to be auctioned`,
+            description: `The note helped persuade President Roosevelt the US should develop the world's first nuclear weapons.`,
+            note: `2 days ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/images/ic/480x270/p0j5qgm8.jpg.webp`,
+            title: `The robots hunting Nazi-era bombs in the sea`,
+            description: `Remote-controlled seabed crawlers and robots with "smart grabbers" are cleaning up some of the 1.6 million tonnes of toxic munitions in the North and Baltic seas.`,
+            note: `2 days ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/0D22/production/_106426330_wikileakslogo.png.webp`,
+            title: `Wikileaks' document dumps that shook world`,
+            description: `Since 2006, Wikileaks has published thousands of classified documents and emails.`,
+            note: `2 days ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/26d8/live/d38a6fc0-3212-11ef-a0f4-1b104ecf2771.jpg.webp`,
+            title: `Apple in breach of law on App Store, says EU`,
+            description: `It is the first time a company has been found to be in breach of the Digital Markets Act (DMA).`,
+            note: `3 days ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/afcf/live/4d1f7460-2f9e-11ef-a044-9d4367d5b599.jpg.webp`,
+            title: `Stolen test data and NHS numbers published by hospital hackers`,
+            description: `Experts say the hack is one of the most "significant and harmful" cyber attacks ever in the UK.`,
+            note: `6 days ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/1af6/live/856bd080-2fbb-11ef-a044-9d4367d5b599.jpg.webp`,
+            title: `TikTok confirms it offered US government a 'kill switch' `,
+            description: `The platform made the disclosure as part of its legal challenge against a law forcing its sale in the US.`,
+            note: `6 days ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/1024/cpsprodpb/b851/live/5b3d93e0-2ee7-11ef-88d9-0bf10c68769b.jpg.webp`,
+            title: `Booking.com warns of up to 900% increase in travel scams`,
+            description: `The online travel firm says generative AI tools, such as ChatGPT, are driving the explosive rise.`,
+            note: `7 days ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/c74d/live/7ae75f70-2e36-11ef-aa27-fba4175cc85d.jpg.webp`,
+            title: `Joey Barton to pay an extra £35,000 to Jeremy Vine`,
+            description: `The ex-footballer had already agreed to pay £75,000 over a series of defamatory social media posts.`,
+            note: `8 days ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/ac4e/live/670947d0-2e44-11ef-90be-b75b34b0bbb2.png.webp`,
+            title: `Don't blame us for people suffering - London hospital hackers`,
+            description: `They claim the cyber attack - which has disrupted more than 1,000 procedures - was politically motivated.`,
+            note: `8 days ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/320/cpsprodpb/d738/live/95618ef0-2d7f-11ef-933f-594e9e9f7991.jpg.webp`,
+            title: `Bacon ice cream and nugget overload sees misfiring McDonald's AI withdrawn`,
+            description: `The voice recognition system seems not to have recognised what customers were really ordering.`,
+            note: `18 Jun 2024`,
+        },
+    ];
     return (
         <Stack alignItems={'center'} justifyContent={'center'}>
             <Stack width={1300}>
@@ -204,6 +268,14 @@ function Innovation() {
                         );
                     })}
                 </Grid>
+            </Stack>
+            <Stack mt={2} width={1300} borderTop={'2px solid black'}>
+                <Typography pt={2} fontWeight={1000}>
+                    More innovation
+                </Typography>
+                <Stack width={1300} alignItems={'center'} pt={3}>
+                    <PaginationPage arr={data6} />
+                </Stack>
             </Stack>
             <Stack width={'100vw'} borderBottom={'1px solid black'}></Stack>
         </Stack>
