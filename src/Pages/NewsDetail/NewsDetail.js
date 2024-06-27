@@ -1,9 +1,42 @@
 import { Box, Stack, Typography, List, ListItem, ListItemText, Divider, Grid } from '@mui/material';
 import ShareIcon from '@mui/icons-material/Share';
 import { FiberManualRecord } from '@mui/icons-material';
+import TextNews from '../../components/pageComponent/TextNews/TextNews';
+import MoreNews1 from '../../components/pageComponent/MoreNews1/MoreNews1';
 
 export default function NewsDetail() {
     const arrText = [`Europe`, `France`, `Germany`, `European elections 2024`, `Emmanuel Macron`, `Italy`];
+    const realtedData = [
+        { title: `Russia blocks dozens of independent media outlets`, note: `22hrs ago | Europe` },
+        { title: `War crimes arrest warrants issued for top Russian officials`, note: `22hrs ago | Europe` },
+        { title: `Zelensky sacks top general accused of incompetence`, note: `1 days ago | Europe` },
+    ];
+    const moreArray = [
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/2328/live/6c283970-33d9-11ef-adcc-774fd4a5094b.jpg.webp`,
+            title: `Euro 2024: The Welsh fans that still went to Germany`,
+            description: `Some dedicated fans still flew to Germany despite their Wales not qualifying for the tournament.`,
+            note: `Wales`,
+        },
+        {
+            img: ``,
+            title: ``,
+            description: ``,
+            note: ``,
+        },
+        {
+            img: ``,
+            title: ``,
+            description: ``,
+            note: ``,
+        },
+        {
+            img: ``,
+            title: ``,
+            description: ``,
+            note: ``,
+        },
+    ];
     return (
         <Stack width={'100vw'} pb={5} alignItems={'center'} borderTop={'1px solid black'}>
             <Stack width={700}>
@@ -35,13 +68,13 @@ export default function NewsDetail() {
                 </Stack>
             </Stack>
             <Box
-                pt={2}
-                width={'900px'}
+                pt={3}
+                width={'800px'}
                 height={'500px'}
                 component={'img'}
                 src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/f6c7/live/fb4ccc50-273c-11ef-a0aa-318f04db7c53.jpg.webp"
             />
-            <Stack width={700} pt={2}>
+            <Stack width={700} pt={3}>
                 <Stack gap={2} pb={3} sx={{ '& .MuiTypography-root': { fontSize: '1rem' } }}>
                     <Typography>
                         France's political leaders are scrambling to prepare for snap elections after President Emmanuel
@@ -221,7 +254,7 @@ export default function NewsDetail() {
                     </Typography>
                 </Stack>
             </Stack>
-            <Stack width={700} pt={2}>
+            <Stack width={700} pt={2} pb={3}>
                 <Grid container gap={2}>
                     <Grid xs={6 - 0.2}>
                         <Stack spacing={1}>
@@ -256,16 +289,39 @@ export default function NewsDetail() {
                         </Stack>
                     </Grid>
                 </Grid>
-                <Stack p={3} direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
+                <Stack pt={3} direction={'row'} justifyContent={'space-between'}>
                     {arrText.map((text) => {
                         return (
-                            <Stack p={1} sx={{ backgroundColor: '#e2e2e2' }}>
+                            <Stack
+                                p={1}
+                                sx={{
+                                    backgroundColor: '#f6f6f6',
+                                    '&:hover': { color: 'white', backgroundColor: `rgb(58,60,62)` },
+                                    cursor: 'pointer',
+                                }}
+                            >
                                 {text}
                             </Stack>
                         );
                     })}
                 </Stack>
             </Stack>
+            <Stack width={1300} borderTop={'3px solid black'} pb={0}>
+                <Typography fontWeight={1000} fontSize={'1.2rem'} pt={2}>
+                    Related
+                </Typography>
+                <Grid container gap={1} pt={2}>
+                    {realtedData.map((data) => {
+                        return (
+                            <Grid xs={4 - 0.1}>
+                                <TextNews data={data} />
+                            </Grid>
+                        );
+                    })}
+                </Grid>
+            </Stack>
+
+            <Stack width={'100vw'} borderBottom={'1px solid black'}></Stack>
         </Stack>
     );
 }

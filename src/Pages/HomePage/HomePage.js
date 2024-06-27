@@ -215,6 +215,12 @@ function HomePage() {
         ],
     };
 
+    const data10 = {
+        img: `https://ichef.bbci.co.uk/images/ic/1376x774/p0j6dtzw.jpg.webp`,
+        title: `Watch Coldplay and Dua Lipa live at Glastonbury`,
+        description: `For the first time, the BBC is livestreaming headline Glastonbury performances to a global audience, with Dua Lipa and Coldplay's 2024 Pyramid Stage sets available to view on bbc.com.`,
+    };
+
     return (
         <>
             <Stack alignItems={'center'} justifyContent={'center'} borderBottom={'1px solid black'}>
@@ -305,7 +311,7 @@ function HomePage() {
                 </Stack>
                 {/* Outstanding */}
                 <Stack pt={'471px'} width={1200} pb={5} mt={5}>
-                    <OnlyNews />
+                    <OnlyNews data={data10} />
                 </Stack>
 
                 {/* News By Category */}

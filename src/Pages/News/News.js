@@ -12,21 +12,21 @@ import OnlyNews from '../../components/pageComponent/OnlyNews/OnlyNews';
 function News() {
     const data3 = [
         {
-            title: 'Macron snap election leaves rivals stunned after EU vote',
+            title: 'What England should do next - BBC Sport pundits have their say',
             description:
-                "Greek police say initial tests found no injuries that could have caused the TV presenter's death.",
-            note: '24 hrs ago | Europe',
+                "As England prepare for Sunday's Euro 2024 last-16 tie, BBC Sport pundits debate how they have performed and what needs to happen next.",
+            note: '7 hrs ago | England Men',
         },
         {
-            title: 'How a Kenyan farmer became a champion of climate change denial',
-            description:
-                'A Kenyan farmer has caught the eye of climate change deniers worldwide. But what is driving him?',
-            note: '24 hrs ago | Africa',
+            title: `Slovakia next - England's path as draw opens up`,
+            description: `BBC Sport takes a look at England's possible routes through the Euro 2024 knockout stage after the Three Lions top Group C.`,
+            note: '4 hrs ago | European Champioship',
         },
         {
-            title: 'Jordan Bardella could soon be French PM at 28. But for many he remains an enigma',
-            description: "Jordan Bardella's rise has been meteoric after being spotted by Marine Le Pen",
-            note: '24 hrs ago | Europe',
+            title: `Running on a volcano's rim - the race in the shadow of an eruption`,
+            description:
+                "In 2021, La Palma's volcanos erupted, issuing tonnes of molten rock and a reminder of the perilious nature of the island's premier running race.",
+            note: '1 days ago',
         },
         {
             title: "Ramsay shaken after 'really bad' cycling accident",
@@ -94,71 +94,71 @@ function News() {
 
     const data4 = [
         {
-            img: 'https://ichef.bbci.co.uk/images/ic/800xn/p0j3kk9s.jpg.webp',
-            title: 'France revives the 1,000-year-old Cultural Olympiad. We checked it out',
+            img: 'https://ichef.bbci.co.uk/news/640/cpsprodpb/051f/live/f5da5940-33cb-11ef-a508-e1cdd362243c.jpg.webp',
+            title: 'Foden leaves England camp for birth of third child',
             description:
-                "For nearly 1,000 years, the Greek games featured artistic competitions alongside athletic ones. Now, this ancient tradition is inspiring France's new Cultural Olympiad.",
-            note: '1 day ago | Europe',
+                'England midfielder Phil Foden leaves their Euro 2024 camp to return to the UK for the birth of his third child.',
+            note: '11hrs ago | European Champioship',
         },
         {
-            img: 'https://ichef.bbci.co.uk/images/ic/1920x1080/p0j3vksd.jpg.webp',
-            title: 'The writers making AI sound human',
-            description:
-                "If you're worried about how AI will affect your job, the world of copywriters may offer a glimpse of the future.",
-            note: '1 day ago | Europe',
+            img: 'https://ichef.bbci.co.uk/news/640/cpsprodpb/22b6/live/640f7540-33d5-11ef-b3b2-c3ba2ab52d36.jpg.webp',
+            title: `Kenya's president withdraws tax plan after deadly protest`,
+            description: `President Ruto says Kenyans have spoken - and he "concedes" on the controversial tax hikes.`,
+            note: '1 day ago | Africa',
         },
     ];
 
     const data5 = {
-        img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/7774/live/4e0377d0-2be5-11ef-90be-b75b34b0bbb2.jpg.webp',
-        title: 'Hamburg police shoot man with axe ahead of Euros match',
-        description:
-            'Police say they shot and injured the man, ahead of a Euro 2024 match between the Netherlands and Poland.',
-        note: '24 hrs ago | Europe',
+        img: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/b3fc/live/726b6810-32d1-11ef-a044-9d4367d5b599.jpg.webp',
+        title: 'China space probe returns with rare Moon rocks ',
+        description: `The Chang'e-6 has landed after collecting the first ever samples from the far side of the Moon.`,
+        note: '2 days ago | Asia',
     };
 
     const data6 = {
-        img: 'https://ichef.bbci.co.uk/news/640/cpsprodpb/0de2/live/731a8cf0-2a43-11ef-a1fa-1b739acc6f54.jpg.webp',
-        title: 'Boy grapples with tradition in Spanish bullfighting town',
-        description: `A new film follows a boy as he tries to square a controversial practice with his family's hopes for him.`,
-        note: '24 hrs ago | Europe',
+        img: 'https://ichef.bbci.co.uk/news/640/cpsprodpb/89a8/live/889d93e0-33aa-11ef-bdc5-41d7421c2adf.jpg.webp',
+        title: `Adorable moment girl, five, declares on air she has a boyfriend`,
+        description: `A little girl shares with a BBC reporter in front of her amused parents that she has her first boyfriend.`,
+        note: '15 hrs ago | Somerset',
     };
 
     const data7 = [
         {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/8b82/live/105ea700-2c27-11ef-a044-9d4367d5b599.jpg.webp',
-            title: `Bellingham - the England hero who 'writes his own scripts'`,
-            description: `Jude Bellingham's remarkable rise continued as he netted England's winner in their Euro 2024 opener against Serbia.`,
-            note: '24 hrs ago | Europe',
+            img: 'https://ichef.bbci.co.uk/news/640/cpsprodpb/f6ca/live/277dc0a0-32ef-11ef-90be-b75b34b0bbb2.jpg.webp',
+            title: `Footage shows moment deadly S Korea factory fire breaks out`,
+            description: `Twenty-three people died in a lithium battery explosion and fire in a South Korea factory.`,
+            note: '2 days ago | Asia',
         },
         {
-            img: 'https://ichef.bbci.co.uk/images/ic/1920x1080/p0j43csb.jpg.webp',
-            title: 'How to apologise effectively',
-            description: `If you're struggling to say you're sorry, AI is happy to help. But can robots handle social intelligence? We put their apologies to the test.`,
-            note: '24 hrs ago | Europe',
+            img: 'https://ichef.bbci.co.uk/news/800/cpsprodpb/245d/live/13607ee0-3386-11ef-bdc5-41d7421c2adf.jpg.webp',
+            title: `Could the World Cup signal goodbye for India's batting legends?`,
+            description: `Two Indian cricket icons might retire after the ongoing World Cup. A win would mark their peak.`,
+            note: '4 hrs ago | Asia',
         },
         {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/179a/live/fb338880-2bdd-11ef-90be-b75b34b0bbb2.jpg.webp',
-            title: 'Clive Myrie shares emotional toll of broadcasting',
-            description: `The TV anchor shares the impact of reporting from war zones and personal toll of being a prominent public figure.`,
-            note: '24 hrs ago | Europe',
+            img: 'https://ichef.bbci.co.uk/news/640/cpsprodpb/8bad/live/0c36e0f0-3417-11ef-a39d-17e2ed2eaeac.jpg.webp',
+            title: `Australian 'swimming queen' Cate Campbell retires`,
+            description: `One of the nation's most celebrated swimmers will hang up her goggles after failing to qualify for Paris 2024.`,
+            note: '50 mins ago | Australia',
         },
         {
-            img: 'https://ichef.bbci.co.uk/news/1536/cpsprodpb/3a66/live/b2adbe50-2bc4-11ef-a044-9d4367d5b599.jpg.webp',
-            title: 'The cow hoof trimmer who is watched by millions',
-            description: `Graeme Parker has a huge internet following for his work with cattle in south-west Scotland.  `,
-            note: '24 hrs ago | Europe',
+            img: 'https://ichef.bbci.co.uk/news/640/cpsprodpb/0ef3/live/6668e280-33bd-11ef-b657-a328515d44be.jpg.webp',
+            title: 'Sleepy Saipan witnesses end of Julian Assange legal saga ',
+            description: `The tiny Pacific island was the most unlikely venue to witness the end of the long and bitter saga of Julian Assange.`,
+            note: '13 hrs ago | World',
         },
     ];
 
     const data8 = [
         {
-            title: `Zuma's MK party to join South Africa's opposition alliance`,
-            description: `The Russian fleet had been anchored just 90 miles from the US state of Florida.`,
+            title: `Julian Assange lands in Australia a free man`,
+            description: `Landing in Canberra, the Wikileaks founder's 14-year legal battle comes to an end after a plea deal with the US.`,
+            note: `8 hrs ago | World`,
         },
         {
-            title: `Greek opposition urges investigation after BBC migrant deaths report`,
-            description: `A BBC investigation found the coastguard had caused dozens of deaths over three years, according to witnesses.`,
+            title: `$100m assets linked to 1MDB to be returned to Malaysia`,
+            description: `The US said artworks by artists Andy Warhol and Claude Monet and a luxury flat in Paris would be liquidated and assets worth $67m released.`,
+            note: `9 hrs ago | World`,
         },
     ];
 
@@ -212,6 +212,11 @@ function News() {
             'The International Committee of the Red Cross said the "grave security incident" was the latest of several.',
         note: '2 hrs ago | Middle East',
         relate: [``],
+    };
+    const data10 = {
+        img: `https://ichef.bbci.co.uk/images/ic/1376x774/p0j6dtzw.jpg.webp`,
+        title: `Watch Coldplay and Dua Lipa live at Glastonbury`,
+        description: `For the first time, the BBC is livestreaming headline Glastonbury performances to a global audience, with Dua Lipa and Coldplay's 2024 Pyramid Stage sets available to view on bbc.com.`,
     };
 
     return (
@@ -281,30 +286,9 @@ function News() {
                         </Grid> */}
                     </Grid>
                 </Stack>
-                {/* Must Watch */}
-                <Stack position={'relative'} margin={'auto'} width={'100vw'}>
-                    <Stack
-                        position={'absolute'}
-                        width={'100vw'}
-                        // borderBottom={'1px solid white'}
-                        sx={{ backgroundColor: 'black' }}
-                        left={0}
-                        alignItems={'center'}
-                        justifyContent={'center'}
-                        spacing={2}
-                        pt={3}
-                    >
-                        <Stack width={'1200px'} mt={2} borderTop={'2px solid white'}>
-                            <Typography marginTop={'20px'} fontSize={'18px'} fontWeight={1000} left={0} color={'white'}>
-                                Must Watch
-                            </Typography>
-                        </Stack>
-                        <EmblaCarousel data={dataVideo} />
-                    </Stack>
-                </Stack>
-                {/* Outstanding */}
-                <Stack pt={'471px'} width={1200} pb={5} mt={5}>
-                    <OnlyNews />
+
+                <Stack pt={1} width={1200} pb={5} mt={5} borderTop={'1px solid #e2e2e2'}>
+                    <OnlyNews data={data10} />
                 </Stack>
 
                 {/* News By Category */}
