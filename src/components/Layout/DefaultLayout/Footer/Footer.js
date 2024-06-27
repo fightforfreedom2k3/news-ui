@@ -24,19 +24,19 @@ export default function Footer() {
                     </Typography>
                     <Stack direction={'row'} spacing={1}>
                         <IconButton>
-                            <XIcon />
+                            <XIcon sx={{ ':hover': { color: 'black' } }} />
                         </IconButton>
                         <IconButton>
-                            <FacebookIcon />
+                            <FacebookIcon sx={{ ':hover': { color: 'black' } }} />
                         </IconButton>
                         <IconButton>
-                            <InstagramIcon />
+                            <InstagramIcon sx={{ ':hover': { color: 'black' } }} />
                         </IconButton>
                         <IconButton>
-                            <YouTubeIcon />
+                            <YouTubeIcon sx={{ ':hover': { color: 'black' } }} />
                         </IconButton>
                         <IconButton>
-                            <LinkedInIcon />
+                            <LinkedInIcon sx={{ ':hover': { color: 'black' } }} />
                         </IconButton>
                     </Stack>
                 </Stack>
