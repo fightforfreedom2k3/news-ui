@@ -70,7 +70,11 @@ export default function NavButton() {
                 <MenuIcon fontSize="medium"></MenuIcon>
             </IconButton>
 
-            <IconButton onClick={toggleDrawer((preValue) => !preValue)}>
+            <IconButton
+                onClick={() => {
+                    window.location.href = '/search';
+                }}
+            >
                 <SearchIcon fontSize="medium"></SearchIcon>
             </IconButton>
 

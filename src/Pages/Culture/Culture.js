@@ -5,6 +5,7 @@ import TextNews from '../../components/pageComponent/TextNews/TextNews';
 import MoreNews1 from '../../components/pageComponent/MoreNews1/MoreNews1';
 import OnlyNews from '../../components/pageComponent/OnlyNews/OnlyNews';
 import EmblaCarousel from '../../components/EmblaCarousel/EmblaCarousel';
+import PaginationPage from '../../components/PaginationPage/PaginationPage';
 
 export default function Culture() {
     const data1 = [
@@ -121,6 +122,80 @@ export default function Culture() {
             note: `7 Jun 2024 | Europe`,
         },
     ];
+    const data7 = [
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/5e3d/live/93285780-3474-11ef-a53b-67ee534ca28a.jpg.webp`,
+            title: `Lucky draw sees six-year-old Swiftie bag tickets `,
+            description: `Swifties Aria and her mother, Nicole, from Strabane won tickets to a sold-out show in Dublin.`,
+            note: `3 hrs ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/179f/live/13afbf30-3469-11ef-a044-9d4367d5b599.jpg.webp`,
+            title: `Toadie quits Neighbours after 30 years on screen`,
+            description: `The actor joined the soap in 1995 but will now step behind the camera to become a director.`,
+            note: `5 hrs ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/8e56/live/f367e120-3464-11ef-b897-13a310eae57b.png.webp`,
+            title: `Harry and Meghan painted as royals from history`,
+            description: `Dan Llywelyn Hall previously painted a portrait Elizabeth II, when he was just 32.`,
+            note: `5 hrs ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/890b/live/8c4b97c0-345a-11ef-8635-e38bbba9a160.jpg.webp`,
+            title: `Eras tour guest could knock Swift off top of album chart`,
+            description: `Gracie Abrams' new album is outselling The Tortured Poets Department 2:1 according to chart data.`,
+            note: `6 hrs ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/640/cpsprodpb/5a3c/live/16360170-3454-11ef-9511-d706d739bd96.jpg.webp`,
+            title: `Arundhati Roy wins PEN Pinter Prize for 'powerful voice'`,
+            description: `Roy is a Booker Prize-winning author and has written about human rights issues, and war and capitalism. `,
+            note: `6 hrs ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/5be9/live/f2bcba10-3311-11ef-8cfe-b3e007b3385c.jpg.webp`,
+            title: `Teacher who quit job due to perform at Glastonbury`,
+            description: `Rapper JayaHadADream says she is living her own dream and is excited to appear on stage. `,
+            note: `10 hrs ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/800/cpsprodpb/d2ad/live/3e8d7600-33da-11ef-b3b2-c3ba2ab52d36.jpg.webp`,
+            title: `Film festival focuses on South Asian cinema`,
+            description: `The Yorkshire Indian Film Festival will see movies and documentaries screened in Bradford and Leeds.`,
+            note: `10 hrs ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/5798/live/1bc947f0-33c3-11ef-a508-e1cdd362243c.jpg.webp`,
+            title: `'Egyptian' house from 1990s becomes listed building`,
+            description: `Sphinx Hill house in Moulsford has been Grade II* listed by the Department of Culture, Media and Sport.`,
+            note: `10 hrs ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/480/cpsprodpb/6e4e/live/ef73a420-33c2-11ef-a508-e1cdd362243c.jpg.webp`,
+            title: `Naked knitted Chris Martin doll at Glastonbury`,
+            description: `Sandra Witcombe made the doll "as a bit of fun" and hopes it will bring a smile to the singer's face.`,
+            note: `23 hrs ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/320/cpsprodpb/be87/live/7f5ec210-33ad-11ef-ab7a-67b738977048.jpg.webp`,
+            title: `Rave expected to bring thousands to city flyover`,
+            description: `Organisers say that over the past three years the event has become popular with drum 'n' bass fans.`,
+            note: `1 day ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/320/cpsprodpb/d07f/live/bcfd9640-33a9-11ef-ab7a-67b738977048.jpg.webp`,
+            title: `The Welsh bands and artists at Glastonbury 2024`,
+            description: `Charlotte Church, Skindred and Cara Hammond are among a long list of Welsh artists at Glastonbury 2024.`,
+            note: `1 day ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/320/cpsprodpb/953f/live/1410d7d0-32f1-11ef-9560-555d750b318d.jpg.webp`,
+            title: `Watts statue gets new fingers for 350-year birthday`,
+            description: `The statue sits in Watts Park in Southampton and has been repaired to celebrate his 350th birthday.`,
+            note: `1 day ago`,
+        },
+    ];
     return (
         <Stack alignItems={'center'} justifyContent={'center'}>
             <Stack width={1300} borderBottom={'2px solid black'}>
@@ -189,6 +264,15 @@ export default function Culture() {
                 </Stack>
             </Stack>
             <Stack mt={'490px'}></Stack>
+            <Stack mt={2} width={1300} borderTop={'2px solid black'}>
+                <Typography pt={2} fontWeight={1000}>
+                    More Culture
+                </Typography>
+                <Stack width={1300} alignItems={'center'} pt={3}>
+                    <PaginationPage arr={data7} />
+                </Stack>
+            </Stack>
+            <Stack mt={1} width={'100vw'} border={'1px solid black'}></Stack>
         </Stack>
     );
 }

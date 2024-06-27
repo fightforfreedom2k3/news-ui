@@ -1,5 +1,6 @@
 import { Box, IconButton, Stack, Typography } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
+import SearchIcon from '@mui/icons-material/Search';
 
 export default function NavBar2() {
     const arrayObject = [
@@ -65,7 +66,7 @@ export default function NavBar2() {
                 </IconButton>
             </Stack>
 
-            <Stack direction={'row'} spacing={4}>
+            <Stack direction={'row'} spacing={4} height={'100%'} justifyContent={'center'} alignItems={'center'}>
                 {arrayObject.map((object) => {
                     return (
                         <Stack
@@ -79,6 +80,23 @@ export default function NavBar2() {
                         </Stack>
                     );
                 })}
+                <Stack
+                    direction={'row'}
+                    alignItems={'center'}
+                    spacing={1}
+                    sx={{ backgroundColor: '#E6E8EA', cursor: 'pointer' }}
+                    height={'70%'}
+                    width={'190px'}
+                    pl={1}
+                    onClick={() => {
+                        window.location.href = '/search';
+                    }}
+                >
+                    <SearchIcon />
+                    <Typography fontWeight={1000} fontSize={'14px'}>
+                        Search here
+                    </Typography>
+                </Stack>
             </Stack>
         </Stack>
     );

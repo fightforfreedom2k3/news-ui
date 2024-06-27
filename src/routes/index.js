@@ -13,6 +13,7 @@ import Setting from '../Pages/Setting/Setting';
 import Privacy from '../Pages/Setting/Privacy';
 import EmailPreferences from '../Pages/Setting/EmailPreferences';
 import NewsDetail from '../Pages/NewsDetail/NewsDetail';
+import Search from '../Pages/Search/Search';
 //Public routes
 const publicRouter = [
     { path: '/', component: HomePage },
@@ -28,6 +29,7 @@ const publicRouter = [
     { path: '/privacy&cookies', component: Privacy, layout: null },
     { path: '/emailpreferences', component: EmailPreferences, layout: null },
     { path: '/newsdetail', component: NewsDetail },
+    { path: '/search', component: Search, layout: null },
 ];
 
 //Private routes

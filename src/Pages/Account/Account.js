@@ -27,12 +27,7 @@ export default function () {
                         <Typography fontWeight={1000} fontSize={'1.5rem'} color={'white'}>
                             Your account
                         </Typography>
-                        <Stack
-                            direction={'row'}
-                            pt={1.5}
-                            spacing={2}
-                            divider={<Box component={'hr'} sx={{ border: '2px solid white' }} />}
-                        >
+                        <Stack direction={'row'} pt={1.5} spacing={2}>
                             <Stack
                                 onClick={() => {
                                     window.location.href = '/account';
@@ -48,7 +43,7 @@ export default function () {
                                     Overview
                                 </Typography>
                             </Stack>
-                            <Stack sx={{ cursor: 'pointer' }}>
+                            <Stack sx={{ cursor: 'pointer' }} pl={1} pr={1}>
                                 <Typography
                                     color={'white'}
                                     fontWeight={1000}
