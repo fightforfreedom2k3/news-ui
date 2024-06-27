@@ -4,7 +4,7 @@ import MainNews from '../../components/pageComponent/MainNews/MainNews';
 import TextNews from '../../components/pageComponent/TextNews/TextNews';
 import MoreNews1 from '../../components/pageComponent/MoreNews1/MoreNews1';
 import OnlyNews from '../../components/pageComponent/OnlyNews/OnlyNews';
-import { Grid4x4 } from '@mui/icons-material';
+import EmblaCarousel from '../../components/EmblaCarousel/EmblaCarousel';
 
 export default function Culture() {
     const data1 = [
@@ -83,6 +83,44 @@ export default function Culture() {
             note: `3 May 2024 | Culture`,
         },
     ];
+    const dataVideo = [
+        {
+            img: `https://ichef.bbci.co.uk/news/320/cpsprodpb/6824/live/d2cc3870-3389-11ef-a044-9d4367d5b599.jpg.webp`,
+            title: `Taylor Swift fan gifted star's hat at Wembley gig`,
+            description: `Watch the emotional moment Taylor Swift gave a superfan her hat at London's Wembley Stadium.`,
+            note: `1 day ago`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/320/cpsprodpb/5825/live/1518a290-2fca-11ef-90be-b75b34b0bbb2.jpg.webp`,
+            title: `Watch: Taylor Swift remix played at Changing of the Guard`,
+            description: `The orchestral version of the song was played to mark the first London dates of Taylor Swift's Eras tour at Wembley.`,
+            note: `6 days ago | London`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/320/cpsprodpb/8371/live/2e6e64c0-2a7d-11ef-bdc5-41d7421c2adf.jpg.webp`,
+            title: `Inside the derelict rooms where British TV was born`,
+            description: `Nestled inside Alexandra Palace’s east wing are historic rooms rarely seen by the public. `,
+            note: `15 Jun 2024 | London`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/320/cpsprodpb/bd74/live/0de50850-2a62-11ef-a1fa-1b739acc6f54.jpg.webp`,
+            title: `MBE a 'wow moment' for BBC presenter Nick Owen`,
+            description: `BBC Midlands Today presenter is recognised for services to broadcasting and charity.`,
+            note: `15 Jun 2024 | Birmingham & Black Country`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/320/cpsprodpb/1188/live/11d0f0d0-2636-11ef-80aa-699d54c46324.jpg.webp`,
+            title: `LGBTQ+ photo exhibition comes to Tate Modern`,
+            description: `Zanele Muholi's work features the lives of black LGBTQ+ South Africans.`,
+            note: `9 Jun 2024 | London`,
+        },
+        {
+            img: `https://ichef.bbci.co.uk/news/320/cpsprodpb/0113/live/514e2140-24da-11ef-a13a-0b8c563da930.jpg.webp`,
+            title: `On the coastal path near where Michael Mosley was last seen`,
+            description: `Known for his TV programmes and his Just One Thing podcast which airs on BBC Radio 4, the presenter was last seen on Wednesday.`,
+            note: `7 Jun 2024 | Europe`,
+        },
+    ];
     return (
         <Stack alignItems={'center'} justifyContent={'center'}>
             <Stack width={1300} borderBottom={'2px solid black'}>
@@ -117,7 +155,7 @@ export default function Culture() {
                     })}
                 </Stack>
             </Stack>
-            <Stack width={1300} pt={2} borderBottom={'2px solid black'}>
+            <Stack width={1300} pt={2}>
                 <OnlyNews data={data5} />
                 <Grid container gap={2} pt={1.5}>
                     {data6.map((data) => {
@@ -129,6 +167,28 @@ export default function Culture() {
                     })}
                 </Grid>
             </Stack>
+            <Stack width={'100vw'} margin={'auto'} position={'relative'} mt={2}>
+                <Stack
+                    position={'absolute'}
+                    width={'100vw'}
+                    sx={{
+                        backgroundColor: 'black',
+                    }}
+                    left={0}
+                    alignItems={'center'}
+                    justifyContent={'center'}
+                    spacing={2}
+                    pt={3}
+                >
+                    <Stack width={1000} mt={2} borderTop={'2px solid white'}>
+                        <Typography marginTop={'20px'} fontSize={'18px'} fontWeight={1000} left={0} color={'white'}>
+                            Watch
+                        </Typography>
+                    </Stack>
+                    <EmblaCarousel data={dataVideo} />
+                </Stack>
+            </Stack>
+            <Stack mt={'490px'}></Stack>
         </Stack>
     );
 }
